@@ -1,0 +1,56 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url = "mysql://root:Qaz123-321@localhost:3306/masha_next"
+  relationMode = "prisma"
+}
+
+
+model User {
+  id      Int      @id @default(autoincrement())
+  email   String   @unique
+  password String
+  isAdmin Boolean
+}
+
+model Zapisi {
+  id     Int      @id @default(autoincrement())
+  title  String
+  start  DateTime
+  end    DateTime
+  tel    String
+  type   String
+  zapros String
+  allDay Boolean
+}
+
+model Articles {
+  id          Int      @id @default(autoincrement())
+  article      String @db.LongText
+  img         Json
+  link        String
+  description String
+  like        Int      @default(0)
+  group       String
+  count       Int      @default(0)
+  publication Boolean  @default(false)
+  view        Int
+  dateTime    DateTime
+}
+
+model Otzyvy {
+  id           Int      @id @default(autoincrement())
+  otzyv        String
+  city         String
+  response     String
+  name         String
+  vozvrast     String
+  tel          String
+  rate         Int
+  isPublication Boolean  @default(false)
+  isNew         Boolean  @default(true)
+}
+

@@ -1,0 +1,43 @@
+.menu {
+	width: 300px;
+	height: 100px;
+ }
+ 
+.btn-menu-ul {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	background: #fff;
+ }
+ 
+ .btn-menu-ul li {
+	color: #000;
+	display: block;
+ }
+ 
+ .btn-menu-ul,
+ .btn-menu-ul li {
+	list-style: none;
+	margin: 0;
+	padding: 10px;
+ }
+ 
+ .btn-menu {
+	-webkit-appearance: button;
+	background: #fff;
+	color: #000;
+	border: none;
+	border-radius: 20px;
+	padding: 12px 20px;
+	cursor: pointer;
+	width: 100%;
+	text-align: left;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+ }
+ 
+ .btn-menu path {
+	fill: #191c1d;
+ }

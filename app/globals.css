@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {	
+	background-color: #cdcecf;
+}
+
+[type='submit']{
+	background-color: #65a30d;
+ }
+ [type='button']{
+	background-color: #65a30d;
+ }
