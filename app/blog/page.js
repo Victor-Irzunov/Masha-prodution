@@ -32,7 +32,6 @@ const BlogPage = () => {
 	}, [])
 
 	const countPlusOne = (id) => {
-		console.log("🚀 🚀 🚀  _ file: page.js:34 _ countPlusOne _ id:", id)
 		userViewArticle(id)
 			.then(data => {
 				console.log("🚀 🚀 🚀  _ file: page.js:37 _ countPlusOne _ data:", data)

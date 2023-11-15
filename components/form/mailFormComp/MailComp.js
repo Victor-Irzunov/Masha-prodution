@@ -1,4 +1,3 @@
-"use client"
 import { useContext } from 'react'
 import { observer } from "mobx-react-lite"
 import { Button, Divider, Empty, Form, Input, message, Radio } from 'antd'
@@ -29,6 +28,7 @@ export const MailComp = observer(() => {
 	const onFinishFailed = (errorInfo) => {
 		console.log('Failed:', errorInfo);
 	}
+
 
 	return (
 		<div>

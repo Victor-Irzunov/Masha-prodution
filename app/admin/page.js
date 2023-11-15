@@ -3,7 +3,6 @@ import { Collapse, Drawer } from 'antd'
 import {
 	FormOutlined, EditOutlined, MailOutlined
 } from '@ant-design/icons'
-// import FormZapisi from '../../components/formAdmin/formZapisi/FormZapisi'
 import CalendarComp from '../../components/Calendar/CalendarComp'
 import FormArticlesPage from '../../components/formAdmin/formArticlesPages/FormArticlesPage'
 import FomrGetOneArticlesPage from '../../components/formAdmin/formArticlesPages/changeArticlesPage/FomrGetOneArticlesPage'
@@ -11,22 +10,6 @@ import { useContext, useState } from 'react'
 import { MyContext } from '../../contexts/MyContextProvider'
 import { MailComp } from '../../components/form/mailFormComp/MailComp'
 import { observer } from 'mobx-react-lite'
-
-
-const items = [
-	{
-		key: '1',
-		label: 'Добавить статью',
-		children: <FormArticlesPage />,
-		extra: <FormOutlined className='text-xl text-lime-600 ml-1' />,
-	},
-	{
-		key: '2',
-		label: 'Изменить статью',
-		children: <FomrGetOneArticlesPage />,
-		extra: <EditOutlined className='text-xl text-rose-600 ml-1' />,
-	},
-];
 
 
 const AdminPage = observer(() => {
@@ -39,6 +22,22 @@ const AdminPage = observer(() => {
 	const onClose = () => {
 		setOpen(false)
 	}
+
+	const items = [
+		{
+			key: '1',
+			label: 'Добавить статью',
+			children: <FormArticlesPage />,
+			extra: <FormOutlined className='text-xl text-lime-600 ml-1' />,
+		},
+		{
+			key: '2',
+			label: 'Изменить статью',
+			children: <FomrGetOneArticlesPage />,
+			extra: <EditOutlined className='text-xl text-rose-600 ml-1' />,
+		},
+	];
+
 
 	return (
 		<section className='pb-28 px-5'>
@@ -60,7 +59,7 @@ const AdminPage = observer(() => {
 				<p className='text-2xl mt-8 mb-8'>Страница администратора</p>
 				<CalendarComp />
 
-				<Collapse accordion bordered={false} size='small' items={items} />
+				<Collapse accordion bordered={false} items={items} />
 			</div>
 
 			<Drawer title="Мария Вам сообщение" placement="right" onClose={onClose} open={open}>

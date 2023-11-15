@@ -1,15 +1,15 @@
 import { FooterComp } from '../components/footer/FooterComp'
 import './globals.css'
-import { Inter } from 'next/font/google'
+// import { Inter } from 'next/font/google'
 import { NavBarMenu } from '../components/navBarMenu/NavBarMenu'
 import { MyContextProvider } from '../contexts/MyContextProvider'
 
 
 
-const inter = Inter({ subsets: ['latin'] })
+// const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Психолог в Минске',
+  title: 'Психолог в Минске | Ирзунова Мария',
   description: 'Услуги психолога в Минске',
 }
 

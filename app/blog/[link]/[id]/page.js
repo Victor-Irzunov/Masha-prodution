@@ -7,7 +7,7 @@ import {
 import { useState, useContext, useEffect } from 'react'
 import { message, Empty, Button } from 'antd'
 import parse from 'html-react-parser'
-import { getOneArticle, userLikeArticle } from "../../../../http/articleAPI"
+import {  userLikeArticle } from "../../../../http/articleAPI"
 import moment from "moment"
 import { LikeOutlined, DislikeOutlined, SmileOutlined } from '@ant-design/icons'
 import { MyContext } from "../../../../contexts/MyContextProvider"

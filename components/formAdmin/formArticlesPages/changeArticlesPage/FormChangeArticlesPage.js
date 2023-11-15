@@ -1,37 +1,17 @@
-
-import { Button, Form, Input, message, Popconfirm, InputNumber, DatePicker, Radio, Upload, Image, Empty } from 'antd'
-import React, { useEffect, useState } from 'react'
-import { changeOneArticle, deleteOneArticle } from '../../../../http/articleAPI'
-import ReactEditor from '../../../react-quill/ReactEditor'
-import moment from 'moment'
-import { UploadOutlined } from '@ant-design/icons'
-import Resizer from "react-image-file-resizer"
-
-const resizeFile = (file, size, size2, quality = 75) =>
-	new Promise((resolve) => {
-		Resizer.imageFileResizer(
-			file,
-			size,
-			size2,
-			"WEBP",
-			quality,
-			0,
-			(uri) => {
-				resolve(uri)
-			},
-			"file",
-		)
-	})
-
-const { RangePicker } = DatePicker
+"use client"
+import { Button, Form, Input, message, Popconfirm, InputNumber, DatePicker, Radio, Upload, Image, Empty } from 'antd';
+import { useState } from 'react';
+import { changeOneArticle, deleteOneArticle } from '../../../../http/articleAPI';
+import ReactEditor from '../../../react-quill/ReactEditor';
+import moment from 'moment';
+import { UploadOutlined } from '@ant-design/icons';
 
 const FormChangeArticlesPage = ({ article }) => {
-	console.log("🚀 🚀 🚀  _ file: FormChangeArticlesPage.js:29 _ FormChangeArticlesPage _ article:", article)
+	console.log("🚀 🚀 🚀  _ file: FormChangeArticlesPage.js:10 _ FormChangeArticlesPage _ article:", article)
 	const [value, setValue] = useState(article)
 	const [form] = Form.useForm()
 
-
-	const onFinish = async (values) => {
+	const onFinish = (values) => {
 		console.log('Success:', values)
 
 		const formData = new FormData()
@@ -67,8 +47,6 @@ const FormChangeArticlesPage = ({ article }) => {
 				form.resetFields()
 			})
 	}
-
-
 	return (
 		<Form
 			name="info-pages"
@@ -117,12 +95,11 @@ const FormChangeArticlesPage = ({ article }) => {
 				Текущее изображение
 			</p>
 			{
-				article.img ?
+				JSON.parse(article.img).length ?
 					<div className='w-1/5 mr-7'>
 
 						<Image
-							// src={process.env.NEXT_PUBLIC_BASE_URL + JSON.parse(article.img)[0].image}
-							src={`uploads/${JSON.parse(article.img)[0].image}`}
+							src={`uploads/${JSON.parse(article.img)[0]?.image}`}
 							className='rounded-md shadow-2xl'
 							preview={false}
 						/>
@@ -131,8 +108,6 @@ const FormChangeArticlesPage = ({ article }) => {
 
 					<Empty />
 			}
-
-
 			<Form.Item
 				label="Изменить фото"
 				name="img"
@@ -163,7 +138,6 @@ const FormChangeArticlesPage = ({ article }) => {
 				<InputNumber />
 			</Form.Item>
 
-
 			<Form.Item
 				label="Изменить тему статьи"
 				name='group'
@@ -177,14 +151,12 @@ const FormChangeArticlesPage = ({ article }) => {
 					<Radio.Button value="6">Клинический</Radio.Button>
 				</Radio.Group>
 			</Form.Item>
-
 			{
 				article.dateTime ?
 					<p className='mt-10 font-semibold'>Дата: {moment(article.dateTime).format('lll')}</p>
 					:
 					undefined
 			}
-
 			<Form.Item
 				label="Изменить дату"
 				name="dateTime"
@@ -196,21 +168,12 @@ const FormChangeArticlesPage = ({ article }) => {
 					format="YYYY-MM-DD HH:mm"
 				/>
 			</Form.Item>
-
-
 			<Form.Item
 				label="Изменить контент страницы"
 				name="article"
-			// rules={[
-			// 	{
-			// 		required: true,
-			// 		message: 'Введите контент страницы!',
-			// 	},
-			// ]}
 			>
 				<ReactEditor value={value} setValue={setValue} />
 			</Form.Item>
-
 
 			<Form.Item
 				label=""
@@ -222,8 +185,6 @@ const FormChangeArticlesPage = ({ article }) => {
 
 				</Radio.Group>
 			</Form.Item>
-
-
 			<Form.Item
 				wrapperCol={{
 					offset: 14,
@@ -247,4 +208,4 @@ const FormChangeArticlesPage = ({ article }) => {
 		</Form>
 	)
 }
-export default FormChangeArticlesPage
+export default FormChangeArticlesPage;

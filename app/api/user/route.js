@@ -20,7 +20,6 @@ export async function GET(req, res) {
 
     return NextResponse.json(user);
   } catch (error) {
-    console.log("🚀 🚀 🚀  _ file: route.js:27 _ GET _ error:", error)
     return new NextResponse('Сервернаяя ошибка', { status: 500 });
   }
 }

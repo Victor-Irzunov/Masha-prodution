@@ -1,17 +1,18 @@
 "use client"
 import { useState } from 'react';
-import ReactQuill, { Quill } from 'react-quill';
-import 'react-quill/dist/quill.snow.css'
-import parse from 'html-react-parser'
-import ImageResize from 'quill-image-resize-module-react'
+// import ReactQuill from 'react-quill';
+import 'react-quill/dist/quill.snow.css';
+import parse from 'html-react-parser';
+// import ImageResize from 'quill-image-resize-module-react';
 import { Button } from 'antd';
+import dynamic from 'next/dynamic';
 
-Quill.register('modules/imageResize', ImageResize)
+// Quill.register('modules/imageResize', ImageResize)
+const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
+
 
 function ReactEditor({ onChange,isGetOne,value, setValue }) {
-	// const [value, setValue] = useState('')
 	const [isActive, setIsActive] = useState(false)
-
 	var toolbarOptions = [
 		['bold', 'italic', 'underline', 'strike'],        // toggled buttons
 		['blockquote', 'code-block'],
@@ -71,9 +72,7 @@ function ReactEditor({ onChange,isGetOne,value, setValue }) {
 				modules={
 					{
 						toolbar: toolbarOptions,
-						imageResize: {
-							parchment: Quill.import('parchment'),
-						}
+						
 					}
 				}
 				style={{ background: '#fff', borderRadius: '10px' }}
@@ -95,9 +94,7 @@ function ReactEditor({ onChange,isGetOne,value, setValue }) {
 					:
 					undefined
 			}
-
 		</>
 	)
 }
-
-export default ReactEditor
+export default ReactEditor;

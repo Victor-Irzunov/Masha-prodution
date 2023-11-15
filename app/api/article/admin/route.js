@@ -85,9 +85,6 @@ export async function POST(req) {
 
 
 export async function PUT(req) {
-  console.log('------------------------------------')
-  console.log('------------------------------------')
-  console.log('------------------------------------')
   try {
     const error = await new Promise((resolve, reject) => {
       upload.any()(req, {}, (err) => {
@@ -105,7 +102,6 @@ export async function PUT(req) {
 
     try {
       const formData = await req.formData();
-      console.log("🚀 🚀 🚀  _ file: route.js:105 _ PUT _ formData:", formData)
       const view = parseInt(formData.get('view'), 10);
       const like = parseInt(formData.get('like'), 10);
       const article = formData.get('article');
