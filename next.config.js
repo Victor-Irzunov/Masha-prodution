@@ -1,8 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-	images: {
-		domains: ['vi-tech.site'],
+	publicRuntimeConfig: {
+	  NEXT_PUBLIC_BASE_URL: process.env.NEXT_PUBLIC_BASE_URL,
 	},
-}
-
-module.exports = nextConfig
+	images: {
+	  domains: ['vi-tech.site'],
+	},
+ };
+ 
+ module.exports = nextConfig;
+ 
