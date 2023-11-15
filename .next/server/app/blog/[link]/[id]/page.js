@@ -594,7 +594,7 @@ async function generateMetadata({ params: { id } }) {
     const title = `${data.link} | Психолог Мария Ирзунова`;
     const description = data.description;
     const alternates = {
-        canonical: `${"http://localhost:3000/"}blog/${(0,_transliterate_transliterate__WEBPACK_IMPORTED_MODULE_2__/* .transliterate */ .R)(data.link.split(" ").join("-"))}`
+        canonical: `${"https://vi-tech.site/"}blog/${(0,_transliterate_transliterate__WEBPACK_IMPORTED_MODULE_2__/* .transliterate */ .R)(data.link.split(" ").join("-"))}`
     };
     return {
         title,

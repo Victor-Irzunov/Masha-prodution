@@ -362,11 +362,11 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 14823:
+/***/ 55567:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 99556, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 95457, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 99556, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85015));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 88232));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 21407));
@@ -672,7 +672,7 @@ const ServicePage = ()=>{
                                         /*#__PURE__*/ jsx_runtime_.jsx("h3", {
                                             className: "sd:text-lg xy:text-base",
                                             children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                                                href: `${"http://localhost:3000/"}uslugi/${(0,transliterate/* transliterate */.R)(el.link.split(" ").join("-"))}`,
+                                                href: `${"https://vi-tech.site/"}uslugi/${(0,transliterate/* transliterate */.R)(el.link.split(" ").join("-"))}`,
                                                 className: "border-b border-black",
                                                 children: el.h3
                                             })

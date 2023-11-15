@@ -2115,10 +2115,10 @@ const getAllZapisi = async ()=>{
 
 //_без авторизации
 const $host = axios__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .Z.create({
-    baseURL: "http://localhost:3000/"
+    baseURL: "https://vi-tech.site/"
 });
 const $authHost = axios__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .Z.create({
-    baseURL: "http://localhost:3000/"
+    baseURL: "https://vi-tech.site/"
 });
 //.вставляю токен
 const authInterceptor = (config)=>{
