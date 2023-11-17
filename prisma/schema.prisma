@@ -2,6 +2,8 @@ generator client {
   provider = "prisma-client-js"
 }
 
+output = "./generated/client"
+
 datasource db {
   provider = "mysql"
   url = "mysql://root:Qaz123-321@localhost:3306/masha_next"
