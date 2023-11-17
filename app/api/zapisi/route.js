@@ -14,7 +14,7 @@ export async function GET(req, res) {
     return new NextResponse("Записей нет", { status: 400 });
 
   } catch (error) {
-    return new NextResponse("Серверр ошибка", { status: 500 });
+    return new NextResponse("Серверр ошибка Записи GET", { status: 500 });
   }
 }
 

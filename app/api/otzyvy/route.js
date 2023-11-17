@@ -13,7 +13,7 @@ export async function GET(req, res) {
 
 		return NextResponse.json(data);
 	} catch (error) {
-		return new NextResponse("Серверная ошибка", { status: 500 });
+		return new NextResponse("Серверная ошибка Отзывы Get", { status: 500 });
 	}
 }
 
