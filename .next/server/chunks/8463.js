@@ -453,7 +453,7 @@ __webpack_unused_export__ = ({
 exports.Z = void 0;
 var _StarFilled = _interopRequireDefault(__webpack_require__(23214));
 var _classnames = _interopRequireDefault(__webpack_require__(71198));
-var _rcRate = _interopRequireDefault(__webpack_require__(60552));
+var _rcRate = _interopRequireDefault(__webpack_require__(7978));
 var React = _interopRequireWildcard(__webpack_require__(18038));
 var _configProvider = __webpack_require__(24056);
 var _tooltip = _interopRequireDefault(__webpack_require__(88232));
@@ -950,7 +950,7 @@ exports["default"] = _default;
 
 /***/ }),
 
-/***/ 60552:
+/***/ 7978:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
