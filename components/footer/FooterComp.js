@@ -2,7 +2,6 @@
 import { Button, FloatButton } from 'antd'
 import { motion } from "framer-motion"
 import { useScreens } from '../../constans/constScreens'
-import { titleAnimation2 } from '../../constans/animation/AnimationConst'
 
 export const FooterComp = () => {
   const screens = useScreens()
@@ -88,7 +87,7 @@ export const FooterComp = () => {
               variants={titleAnimation}
               className='sd:text-4xl xy:text-xl font-extrabold uppercase'
             >
-              психолог Минск
+              психолог в Минске
             </motion.h3>
           </motion.div>
         </div>
