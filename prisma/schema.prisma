@@ -5,7 +5,7 @@ generator client {
 
 datasource db {
   provider = "mysql"
-  url = "mysql://root:Qaz123-321@localhost:3306/masha_next"
+  url = "mysql://root_new:Qaz123-321@localhost:3306/masha_next"
   relationMode = "prisma"
 }
 
