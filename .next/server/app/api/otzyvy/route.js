@@ -67,7 +67,7 @@ async function GET(req, res) {
         });
         return next_response/* default */.Z.json(data);
     } catch (error) {
-        return new next_response/* default */.Z("Серверная ошибка", {
+        return new next_response/* default */.Z("Серверная ошибка Отзывы Get", {
             status: 500
         });
     }

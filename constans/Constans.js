@@ -2,7 +2,6 @@ import infertility from '../public/images/imgSection/infertility.jpg'
 import family from '../public/images/imgSection/family.jpg'
 import child from '../public/images/imgSection/child.jpg'
 import woman from '../public/images/imgSection/woman.jpg'
-// import psychologistTherapy from '../../public/images/imgSection/psychologistTherapy.jpg'
 import clinik from '../public/images/imgSection/clinik.jpg'
 import depression from '../public/images/imgSection/depression.jpg'
 import { HomeOutlined } from '@ant-design/icons'
@@ -247,69 +246,48 @@ export const navBar = [
 		key: 0
 	},
 	{
-		link: '/админ',
+		link: '/admin',
 		label: 'Админка',
 		key: 1
 	},
-
-	// {
-	// 	link: '/бесплодие',
-	// 	label: 'бесплодие',
-	// 	key: 1
-	// },
-	// {
-	// 	link: '/семейный-психолог',
-	// 	label: 'семейный психолог',
-	// 	key: 2
-	// },
-	// {
-	// 	link: '/психолог-для-подростка',
-	// 	label: 'подростковый психолог',
-	// 	key: 3
-	// },
 	{
-		link: '/услуги',
+		link: '/uslugi',
 		label: 'мои услуги',
 		key: 2
 	},
 
 	{
-		link: '/цена-психолога',
+		link: '/stoimost-psihologa',
 		label: 'стоимость',
 		key: 3
 	},
 	{
-		link: '/запись-к-психологу',
+		link: '/zapis-k-psikhologu',
 		label: 'записаться',
 		key: 4
 	},
 	{
-		link: '/блог',
+		link: '/blog',
 		label: 'мои статьи',
 		key: 5
 	},
-	// {
-	// 	link: '/группы',
-	// 	label: 'группы',
-	// 	key: 6
-	// },
 	{
-		link: '/сми',
+		link: '/smi',
 		label: 'я в СМИ',
 		key: 7
 	},
 	{
-		link: '/мария-ирзунова',
+		link: '/psiholog-mariya-irzunova',
 		label: 'обо мне',
 		key: 8
 	},
 	{
-		link: '/отзывы',
+		link: '/otzivi',
 		label: 'отзывы',
 		key: 9
 	},
 	{
-		link: '/контакты',
+		link: '/kontakti',
 		label: 'контакты',
 		key: 10
 	},

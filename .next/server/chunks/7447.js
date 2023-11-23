@@ -21,10 +21,10 @@ var axios = __webpack_require__(81636);
 
 //_без авторизации
 const http_$host = axios/* default */.Z.create({
-    baseURL: "https://vi-tech.site/"
+    baseURL: "http://localhost:3000/"
 });
 const http_$authHost = axios/* default */.Z.create({
-    baseURL: "https://vi-tech.site/"
+    baseURL: "http://localhost:3000/"
 });
 //.вставляю токен
 const authInterceptor = (config)=>{

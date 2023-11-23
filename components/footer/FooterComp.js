@@ -129,8 +129,8 @@ export const FooterComp = () => {
       text-gray-400
       mt-0
       ">
-            Copyright Ⓒ 2015-2023. Разработка и продвижение
-            <a href="https://vi-tech.by" className="text-gradient text-cyan-400" target="_blank">{' '}VI:TECH</a> &nbsp;
+            Copyright Ⓒ 2023. Разработка и продвижение
+            <a href="https://vi-tech.by" className="text-gradient text-cyan-400" target="_blank">{' '}VI:TECH</a> &nbsp; Информация на сайте не является публичной офертой и предоставляется исключительно в информационных целях.
           </p>
         </div>
       </div>

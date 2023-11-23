@@ -672,7 +672,7 @@ const ServicePage = ()=>{
                                         /*#__PURE__*/ jsx_runtime_.jsx("h3", {
                                             className: "sd:text-lg xy:text-base",
                                             children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                                                href: `${"https://vi-tech.site/"}uslugi/${(0,transliterate/* transliterate */.R)(el.link.split(" ").join("-"))}`,
+                                                href: `${"http://localhost:3000/"}uslugi/${(0,transliterate/* transliterate */.R)(el.link.split(" ").join("-"))}`,
                                                 className: "border-b border-black",
                                                 children: el.h3
                                             })
@@ -1029,7 +1029,7 @@ __webpack_require__.r(__webpack_exports__);
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [1697,9716,5015,7495,3803,4170], () => (__webpack_exec__(60811)));
+var __webpack_exports__ = __webpack_require__.X(0, [1697,9716,5015,7495,3803,5481], () => (__webpack_exec__(60811)));
 module.exports = __webpack_exports__;
 
 })();

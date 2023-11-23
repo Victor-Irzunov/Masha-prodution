@@ -58,10 +58,8 @@ const AdminPage = observer(() => {
 			<div className=''>
 				<p className='text-2xl mt-8 mb-8'>Страница администратора</p>
 				<CalendarComp />
-
 				<Collapse accordion bordered={false} items={items} />
 			</div>
-
 			<Drawer title="Мария Вам сообщение" placement="right" onClose={onClose} open={open}>
 				<MailComp />
 			</Drawer>

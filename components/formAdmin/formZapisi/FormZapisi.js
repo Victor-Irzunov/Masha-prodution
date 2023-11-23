@@ -1,15 +1,12 @@
 "use client"
-import { Button, DatePicker, Form, Input, message, Checkbox, Select, Radio } from 'antd'
+import { Button, DatePicker, Form, Input, message, Checkbox, Select, Radio, TimePicker } from 'antd'
 import InputMask from 'react-input-mask'
 import { useState, useContext } from 'react'
 import { MyContext } from '../../../contexts/MyContextProvider'
 import { createDataZapisi } from '../../../http/dataAPI'
 import moment from 'moment'
-
-const { RangePicker } = DatePicker
+// const { RangePicker } = DatePicker
 const { TextArea } = Input
-
-
 
 const FormZapisi = () => {
 	const [form] = Form.useForm()
@@ -32,20 +29,38 @@ const FormZapisi = () => {
 			selection
 		}
 	}
-
 	const onFinish = (values) => {
 		console.log('Success:', values)
 
-		
+
+		// const formData = {
+		// 	zapros: values.zapros || 'индивидуальная',
+		// 	start: values.date[0].$d,
+		// 	end: values.date[1].$d,
+		// 	tel: values.tel || '',
+		// 	title: values.title || 'Весь день',
+		// 	allDay: values.allDay,
+		// 	type: values.type
+		// }
+
+
+		const selectedDate = values.date.format('YYYY-MM-DD');
+		const formattedStart = moment(`${selectedDate} ${values['time-start'].format('HH:mm')}`, 'YYYY-MM-DD HH:mm');
+		const formattedEnd = moment(`${selectedDate} ${values['time-end'].format('HH:mm')}`, 'YYYY-MM-DD HH:mm');
+		console.log("Formatted Start:", formattedStart);
+		console.log("Formatted End:", formattedEnd);
+
 		const formData = {
-			zapros: values.zapros,
-			start: values.date[0].$d,
-			end: values.date[1].$d,
-			tel: values.tel,
-			title: values.title,
+			zapros: values.zapros || 'индивидуальная',
+			start: formattedStart,
+			end: formattedEnd,
+			tel: values.tel || '',
+			title: values.title || 'Весь день',
 			allDay: values.allDay,
-			type: values.type
-		}
+			type: values.type || "online"
+		};
+		console.log("🚀 🚀 🚀  _ file: FormZapisi.js:60 _ onFinish _ formData:", formData)
+
 
 		createDataZapisi(formData)
 			.then(data => {
@@ -83,12 +98,12 @@ const FormZapisi = () => {
 			<Form.Item
 				label="Название"
 				name="title"
-				rules={[
-					{
-						required: true,
-						message: 'Пожалуйста напишите название!',
-					},
-				]}
+			// rules={[
+			// 	{
+			// 		required: true,
+			// 		message: 'Пожалуйста напишите название!',
+			// 	},
+			// ]}
 			>
 				<TextArea placeholder="" autoSize />
 			</Form.Item>
@@ -111,10 +126,30 @@ const FormZapisi = () => {
 					}}
 				/>
 			</Form.Item>
-			<Form.Item
+			{/* <Form.Item
 				name="date"
 				label='Выберите начало и конец события'
 				tooltip="Мария необходимо указать дату и время начала и конца события."
+			rules={[
+				{
+					required: true,
+					message: 'Мария укажите дату события!',
+				},
+			]}
+			>
+				<RangePicker
+					showTime={{
+						format: 'HH:mm',
+						defaultValue: [moment('09:00:00', 'HH:mm:ss'), moment('09:00:00', 'HH:mm:ss')]
+					}}
+					size='small'
+					format="YYYY-MM-DD HH:mm"
+				/>
+			</Form.Item> */}
+			<Form.Item
+				name="date"
+				label='Выберите дату события'
+				tooltip="Мария необходимо указать дату"
 				rules={[
 					{
 						required: true,
@@ -122,14 +157,33 @@ const FormZapisi = () => {
 					},
 				]}
 			>
-				<RangePicker
-					showTime={{
-						format: 'HH:mm',
-						defaultValue: [moment('09:00:00', 'HH:mm:ss'), moment('09:00:00', 'HH:mm:ss')]
-					}}
-
-					format="YYYY-MM-DD HH:mm"
-				/>
+				<DatePicker />
+			</Form.Item>
+			<Form.Item
+				name="time-start"
+				label='Выберите время начала'
+				tooltip="Мария необходимо указать время начала"
+				rules={[
+					{
+						required: true,
+						message: 'Мария укажите время события!',
+					},
+				]}
+			>
+				<TimePicker format='HH:mm' size='large' />
+			</Form.Item>
+			<Form.Item
+				name="time-end"
+				label='Выберите время конца'
+				tooltip="Мария необходимо указать время конца"
+				rules={[
+					{
+						required: true,
+						message: 'Мария укажите время события!',
+					},
+				]}
+			>
+				<TimePicker format='HH:mm' size='large' />
 			</Form.Item>
 			<Form.Item
 				label="Выберите тип консультации"
@@ -181,4 +235,4 @@ const FormZapisi = () => {
 		</Form>
 	)
 }
-export default FormZapisi
+export default FormZapisi;

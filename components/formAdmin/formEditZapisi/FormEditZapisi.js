@@ -171,7 +171,6 @@ const FormEditZapisi = observer(() => {
 							<br />
 							<br />
 
-
 							<Form.Item
 								name="date"
 								label='Изменить время записи'
@@ -183,6 +182,9 @@ const FormEditZapisi = observer(() => {
 									format="YYYY-MM-DD HH:mm"
 								/>
 							</Form.Item>
+
+
+							
 
 
 							<Form.Item

@@ -594,7 +594,7 @@ async function generateMetadata({ params: { id } }) {
     const title = `${data.link} | Психолог Мария Ирзунова`;
     const description = data.description;
     const alternates = {
-        canonical: `${"https://vi-tech.site/"}blog/${(0,_transliterate_transliterate__WEBPACK_IMPORTED_MODULE_2__/* .transliterate */ .R)(data.link.split(" ").join("-"))}`
+        canonical: `${"http://localhost:3000/"}blog/${(0,_transliterate_transliterate__WEBPACK_IMPORTED_MODULE_2__/* .transliterate */ .R)(data.link.split(" ").join("-"))}`
     };
     return {
         title,
@@ -688,7 +688,7 @@ function transliterate(text) {
 var __webpack_require__ = require("../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [1697,9716,1252,5888,8156,9681,1636,3803,2353,2761,4170,8237,7447], () => (__webpack_exec__(60878)));
+var __webpack_exports__ = __webpack_require__.X(0, [1697,9716,1252,5888,8156,9681,1636,3803,2353,2761,5481,8237,7447], () => (__webpack_exec__(60878)));
 module.exports = __webpack_exports__;
 
 })();

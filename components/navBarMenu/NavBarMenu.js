@@ -100,7 +100,8 @@ export const NavBarMenu = observer(() => {
 														key={el.key}
 														custom={el.key}
 														className='mb-3'>
-														<Link href={`${transliterate(el.link)}`}
+														{/* <Link href={`${transliterate(el.link)}`} */}
+														<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}${el.link}`}
 															className='
 										relative
 										before:border-b
@@ -129,7 +130,8 @@ export const NavBarMenu = observer(() => {
 													key={el.key}
 													custom={el.key}
 													className='mb-3'>
-													<Link href={`${transliterate(el.link)}`}
+													<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}${el.link}`}
+												
 														className='
 										relative
 										before:border-b
@@ -177,7 +179,7 @@ export const NavBarMenu = observer(() => {
 							variants={imgAnimation}
 							custom={16}
 							className='text-center'>
-							<Link href='/'>
+						<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}`}>
 								
 							<Image
 									src={avatar}

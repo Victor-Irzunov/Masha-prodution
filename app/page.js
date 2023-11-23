@@ -51,7 +51,7 @@ const Home = () => {
             className='mb-5'
           >
             <Button type='primary' style={{ background: "" }} shape="round" size='large' icon={<FormOutlined />}>
-              <Link href='/zapis-k-psikhologu'>
+              <Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/zapis-k-psikhologu`}>
                 {' '}записаться на консультацию
               </Link>
             </Button>

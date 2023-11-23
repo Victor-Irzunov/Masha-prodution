@@ -465,7 +465,7 @@ const BlogPage = ()=>{
             }),
             data.length ? data.map((el)=>{
                 let img;
-                if (el.img) img = JSON.parse(el.img)[0].image;
+                if (el.img) img = JSON.parse(el.img)[0]?.image;
                 return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                     className: "sd:px-10 xy:px-5",
                     children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
@@ -618,7 +618,7 @@ const __default__ = proxy.default;
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [1697,9716,1252,1024,2353,4170,8237], () => (__webpack_exec__(90029)));
+var __webpack_exports__ = __webpack_require__.X(0, [1697,9716,1252,1024,2353,5481,8237], () => (__webpack_exec__(90029)));
 module.exports = __webpack_exports__;
 
 })();

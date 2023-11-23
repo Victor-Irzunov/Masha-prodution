@@ -66,7 +66,7 @@ const BlogPage = () => {
 			{
 				data.length ? data.map(el => {
 					let img
-					if (el.img) img = JSON.parse(el.img)[0].image
+					if (el.img) img = JSON.parse(el.img)[0]?.image
 					return (
 						<div
 							className='sd:px-10 xy:px-5'

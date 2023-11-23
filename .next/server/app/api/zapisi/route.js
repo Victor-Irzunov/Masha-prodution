@@ -62,15 +62,14 @@ const prisma = new client_.PrismaClient();
 async function GET(req, res) {
     try {
         const data = await prisma.zapisi.findMany();
-        // console.log("🚀 🚀 🚀 zapisi: GET data:", data);
         if (data.length) {
             return next_response/* default */.Z.json(data);
         }
-        return new next_response/* default */.Z("Записей нет", {
-            status: 400
+        return next_response/* default */.Z.json({
+            message: `Записей нет`
         });
     } catch (error) {
-        return new next_response/* default */.Z("Серверр ошибка", {
+        return new next_response/* default */.Z("Серверр ошибка Записи GET", {
             status: 500
         });
     }
@@ -91,11 +90,11 @@ async function POST(req, res) {
                 zapros
             }
         });
-        console.log("\uD83D\uDE80 \uD83D\uDE80 \uD83D\uDE80 zapisi: POST data:", result);
+        // console.log("🚀 🚀 🚀 zapisi: POST data:", result);
         return next_response/* default */.Z.json(result);
     } catch (error) {
         console.log("\uD83D\uDE80 \uD83D\uDE80zapisi: POST error:", error);
-        return new next_response/* default */.Z("Ошибка на серверре", {
+        return new next_response/* default */.Z("Ошибка на серверре zapisi: POST", {
             status: 500
         });
     }

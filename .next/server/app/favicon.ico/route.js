@@ -5,6 +5,13 @@ exports.id = 7155;
 exports.ids = [7155];
 exports.modules = {
 
+/***/ 92824:
+/***/ ((module) => {
+
+module.exports = require("next/server");
+
+/***/ }),
+
 /***/ 22037:
 /***/ ((module) => {
 
@@ -12,7 +19,7 @@ module.exports = require("os");
 
 /***/ }),
 
-/***/ 9482:
+/***/ 58283:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -42,8 +49,8 @@ var node_polyfill_headers = __webpack_require__(36519);
 // EXTERNAL MODULE: ./node_modules/next/dist/server/future/route-modules/app-route/module.js
 var app_route_module = __webpack_require__(53488);
 var module_default = /*#__PURE__*/__webpack_require__.n(app_route_module);
-;// CONCATENATED MODULE: external "next/server"
-const server_namespaceObject = require("next/server");
+// EXTERNAL MODULE: external "next/server"
+var server_ = __webpack_require__(92824);
 ;// CONCATENATED MODULE: ./node_modules/next/dist/build/webpack/loaders/next-metadata-route-loader.js?page=%2Ffavicon.ico%2Froute&isDynamic=0!./app/favicon.ico?__next_metadata_route__
 
 
@@ -52,7 +59,7 @@ const buffer = Buffer.from("AAABAAQAEBAAAAEAIAAoBQAARgAAACAgAAABACAAKBQAAG4FAAAw
   )
 
 function GET() {
-  return new server_namespaceObject.NextResponse(buffer, {
+  return new server_.NextResponse(buffer, {
     headers: {
       'Content-Type': contentType,
       'Cache-Control': "public, max-age=0, must-revalidate",
@@ -100,7 +107,7 @@ const dynamic = 'force-static'
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [1697,8451], () => (__webpack_exec__(9482)));
+var __webpack_exports__ = __webpack_require__.X(0, [1697,8451], () => (__webpack_exec__(58283)));
 module.exports = __webpack_exports__;
 
 })();

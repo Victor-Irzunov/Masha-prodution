@@ -442,6 +442,8 @@ var lib_checkbox = __webpack_require__(75467);
 var lib_select = __webpack_require__(30134);
 // EXTERNAL MODULE: ./node_modules/antd/lib/radio/index.js
 var lib_radio = __webpack_require__(63480);
+// EXTERNAL MODULE: ./node_modules/antd/lib/time-picker/index.js
+var time_picker = __webpack_require__(30148);
 // EXTERNAL MODULE: ./node_modules/react-input-mask/index.js
 var react_input_mask = __webpack_require__(40667);
 var react_input_mask_default = /*#__PURE__*/__webpack_require__.n(react_input_mask);
@@ -462,7 +464,8 @@ var dataAPI = __webpack_require__(92003);
 
 
 
-const { RangePicker } = date_picker["default"];
+
+// const { RangePicker } = DatePicker
 const { TextArea } = input["default"];
 const FormZapisi = ()=>{
     const [form] = lib_form/* default */.Z.useForm();
@@ -489,15 +492,30 @@ const FormZapisi = ()=>{
     };
     const onFinish = (values)=>{
         console.log("Success:", values);
+        // const formData = {
+        // 	zapros: values.zapros || 'индивидуальная',
+        // 	start: values.date[0].$d,
+        // 	end: values.date[1].$d,
+        // 	tel: values.tel || '',
+        // 	title: values.title || 'Весь день',
+        // 	allDay: values.allDay,
+        // 	type: values.type
+        // }
+        const selectedDate = values.date.format("YYYY-MM-DD");
+        const formattedStart = moment_default()(`${selectedDate} ${values["time-start"].format("HH:mm")}`, "YYYY-MM-DD HH:mm");
+        const formattedEnd = moment_default()(`${selectedDate} ${values["time-end"].format("HH:mm")}`, "YYYY-MM-DD HH:mm");
+        console.log("Formatted Start:", formattedStart);
+        console.log("Formatted End:", formattedEnd);
         const formData = {
-            zapros: values.zapros,
-            start: values.date[0].$d,
-            end: values.date[1].$d,
-            tel: values.tel,
-            title: values.title,
+            zapros: values.zapros || "индивидуальная",
+            start: formattedStart,
+            end: formattedEnd,
+            tel: values.tel || "",
+            title: values.title || "Весь день",
             allDay: values.allDay,
-            type: values.type
+            type: values.type || "online"
         };
+        console.log("\uD83D\uDE80 \uD83D\uDE80 \uD83D\uDE80  _ file: FormZapisi.js:60 _ onFinish _ formData:", formData);
         (0,dataAPI/* createDataZapisi */.BT)(formData).then((data)=>{
             if (data.message) {
                 message/* default */.ZP.warning(data.message);
@@ -531,12 +549,6 @@ const FormZapisi = ()=>{
             /*#__PURE__*/ jsx_runtime_.jsx(lib_form/* default */.Z.Item, {
                 label: "Название",
                 name: "title",
-                rules: [
-                    {
-                        required: true,
-                        message: "Пожалуйста напишите название!"
-                    }
-                ],
                 children: /*#__PURE__*/ jsx_runtime_.jsx(TextArea, {
                     placeholder: "",
                     autoSize: true
@@ -560,23 +572,44 @@ const FormZapisi = ()=>{
             }),
             /*#__PURE__*/ jsx_runtime_.jsx(lib_form/* default */.Z.Item, {
                 name: "date",
-                label: "Выберите начало и конец события",
-                tooltip: "Мария необходимо указать дату и время начала и конца события.",
+                label: "Выберите дату события",
+                tooltip: "Мария необходимо указать дату",
                 rules: [
                     {
                         required: true,
                         message: "Мария укажите дату события!"
                     }
                 ],
-                children: /*#__PURE__*/ jsx_runtime_.jsx(RangePicker, {
-                    showTime: {
-                        format: "HH:mm",
-                        defaultValue: [
-                            moment_default()("09:00:00", "HH:mm:ss"),
-                            moment_default()("09:00:00", "HH:mm:ss")
-                        ]
-                    },
-                    format: "YYYY-MM-DD HH:mm"
+                children: /*#__PURE__*/ jsx_runtime_.jsx(date_picker["default"], {})
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx(lib_form/* default */.Z.Item, {
+                name: "time-start",
+                label: "Выберите время начала",
+                tooltip: "Мария необходимо указать время начала",
+                rules: [
+                    {
+                        required: true,
+                        message: "Мария укажите время события!"
+                    }
+                ],
+                children: /*#__PURE__*/ jsx_runtime_.jsx(time_picker/* default */.Z, {
+                    format: "HH:mm",
+                    size: "large"
+                })
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx(lib_form/* default */.Z.Item, {
+                name: "time-end",
+                label: "Выберите время конца",
+                tooltip: "Мария необходимо указать время конца",
+                rules: [
+                    {
+                        required: true,
+                        message: "Мария укажите время события!"
+                    }
+                ],
+                children: /*#__PURE__*/ jsx_runtime_.jsx(time_picker/* default */.Z, {
+                    format: "HH:mm",
+                    size: "large"
                 })
             }),
             /*#__PURE__*/ jsx_runtime_.jsx(lib_form/* default */.Z.Item, {
@@ -741,7 +774,7 @@ const FormGetZapisi = ({ setData })=>{
 
 
 
-const { RangePicker: FormEditZapisi_RangePicker } = date_picker["default"];
+const { RangePicker } = date_picker["default"];
 const { TextArea: FormEditZapisi_TextArea } = input["default"];
 const FormEditZapisi = (0,dist.observer)(()=>{
     const [form] = lib_form/* default */.Z.useForm();
@@ -904,7 +937,7 @@ const FormEditZapisi = (0,dist.observer)(()=>{
                                 /*#__PURE__*/ jsx_runtime_.jsx(lib_form/* default */.Z.Item, {
                                     name: "date",
                                     label: "Изменить время записи",
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx(FormEditZapisi_RangePicker, {
+                                    children: /*#__PURE__*/ jsx_runtime_.jsx(RangePicker, {
                                         showTime: {
                                             format: "HH:mm"
                                         },
@@ -2150,7 +2183,7 @@ const __default__ = proxy.default;
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [1697,9716,5015,5284,1252,1024,9841,9232,9681,9814,5845,7926,4170,8237], () => (__webpack_exec__(90264)));
+var __webpack_exports__ = __webpack_require__.X(0, [1697,9716,5015,5284,1252,1024,9841,9232,9681,9814,5845,4836,5481,8237], () => (__webpack_exec__(90264)));
 module.exports = __webpack_exports__;
 
 })();
