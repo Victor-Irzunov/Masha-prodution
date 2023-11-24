@@ -34,7 +34,7 @@ const FotoInfoMainPage = () => {
 				variants={infoAnimation}
 				className='flex xy:flex-col sd:flex-row'
 			>
-				<div className='xy:mb-10 sd:mb-0'>
+				<div className='xyy:mb-10 sd:mb-0 sd:pr-5 xyy:pr-0'>
 					<Image src={foto}
 						width={screens.lg ? '85%' : '100%'}
 						alt='фото психолог в Минске'
