@@ -1,7 +1,7 @@
-import wday from '../../public/images/smi/xxh.jpeg'
-import talon from '../../public/images/smi/talon.png'
-import doctorPiter from '../../public/images/smi/doctorPiter.svg'
-import theGirl from '../../public/images/smi/theGirl.png'
+import wday from '../../public/images/smi/xxh.webp'
+import talon from '../../public/images/smi/talon.webp'
+import doctorPiter from '../../public/images/smi/doctorPiter.webp'
+import theGirl from '../../public/images/smi/theGirl.webp'
 
 
 export const data = [

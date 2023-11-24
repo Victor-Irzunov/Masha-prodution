@@ -26,7 +26,7 @@ const ContentSection = () => {
 							</h2>
 						</motion.div>
 						<motion.div
-							className='relative text-sm text-black font-light text-justify'
+							className='relative text-sm text-black font-light text-justify mt-4'
 							variants={yCustomAnimation}
 							custom={2}
 						>

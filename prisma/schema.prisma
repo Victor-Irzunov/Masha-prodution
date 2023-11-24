@@ -44,7 +44,7 @@ model Articles {
 
 model Otzyvy {
   id           Int      @id @default(autoincrement())
-  otzyv        String
+  otzyv        String @db.LongText
   city         String
   response     String
   name         String

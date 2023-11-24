@@ -21,6 +21,7 @@ export async function GET(req, res) {
 export async function POST(req, res) {
 	try {
 		const body = await req.json();
+		console.log("🚀 🚀 🚀  _ file: route.js:24 _ POST _ body:", body)
 		const { name, vozvrast, city, tel, otzyv, rate } = body;
 		const data = await prisma.otzyvy.create({
 			data: {
@@ -38,10 +39,10 @@ export async function POST(req, res) {
 			return NextResponse.json({ message: 'Ваш отзыв принят. Спасибо' });
 		}
 
-		return NextResponse.json({ message: 'Ошибка' });
+		return NextResponse.json({ message: 'Ошибка отзыва' });
 	} catch (error) {
-		console.log("🚀 POST error:", error);
-		return new NextResponse("Ошибка на сервере", { status: 500 });
+		console.log("🚀 POST error отзыв:", error);
+		return new NextResponse("Ошибка на сервере создание отзыва", { status: 500 });
 	}
 }
 

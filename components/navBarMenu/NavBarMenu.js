@@ -70,17 +70,11 @@ export const NavBarMenu = observer(() => {
 		user.setUserData({})
 	}
 
-	// console.log('screens:', screens)
-
 	return (
 
 		screens.lg ?
-			<div className='w-1/5'>
-				<nav className='bg-[#cdcecf] 
-		h-screen fixed top-0
-		 left-0 pl-10 pr-10 pt-20 pb-2
-		 border-r border-[#bcbdbe]
-		 '>
+			<header className='w-1/5 border-r border-[#bcbdbe] overflow-hidden'>
+				<nav className='bg-[#cdcecf] h-screen fixed top-0 left-0 pl-10 pr-10 pt-20 pb-2'>
 					<motion.div
 						initial="hidden"
 						whileInView="visible"
@@ -194,9 +188,9 @@ export const NavBarMenu = observer(() => {
 				</nav>
 
 				<ModalComponent open={open} setOpen={setOpen} />
-			</div>
+			</header>
 			:
-			<div>
+			<header>
 				<div className='fixed top-3 right-4 p-2 border z-50'>
 					<MenuOutlined
 						className='text-3xl'
@@ -211,6 +205,6 @@ export const NavBarMenu = observer(() => {
 					imgAnimation={imgAnimation}
 					open={open} setOpen={setOpen}
 				/>
-			</div>
+			</header>
 	)
 })

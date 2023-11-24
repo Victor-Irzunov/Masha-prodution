@@ -29,14 +29,15 @@ const QuestionsMainPage = () => {
 		}
 	}
 	return (
-		<>
+		<div className='bg-white'>
 			<motion.section
-				className='sd:px-10 xy:px-5 py-10 bg-white overflow-hidden'
+				className='py-10 overflow-hidden w-full px-4'
 				initial="hidden"
 				whileInView="visible"
 				id='voprosy'
 			>
 				<motion.div
+					className=''
 					variants={blockAnimation}
 				>
 					<h3 className='sd:text-6xl xy:text-2xl font-extrabold'>
@@ -82,7 +83,7 @@ const QuestionsMainPage = () => {
 				setIsModalOpen={setIsModalOpen}
 				title='Задать вопрос'
 			/>
-		</>
+		</div>
 	)
 }
 export { QuestionsMainPage }

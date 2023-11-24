@@ -53,7 +53,7 @@ export const FooterComp = () => {
 
 
   return (
-    <section className='sd:px-10 xy:px-5 pt-10 bg-white h-[80vh] flex overflow-hidden'>
+    <footer className='sd:px-10 xy:px-5 pt-10 bg-white h-[80vh] flex overflow-hidden'>
       <FloatButton.BackTop />
       <div className='w-1/5 xy:hidden sd:block'></div>
 
@@ -117,23 +117,26 @@ export const FooterComp = () => {
           </motion.div>
         </motion.div>
 
-        <div className='flex justify-between items-start xy:flex-col sd:flex-row'>
+        <div className='flex justify-between items-start xy:flex-col sd:flex-row pb-5'>
           {/* <p className='text-gray-400 xy:mb-0 uppercase text-xs'>психолог мария ирзунова Ⓒ 2015-2023</p> */}
           <p className="
       font-poppins
       font-normal
-      text-center
+      text-left
       sm:text-[14px]
       xy:text-[10px]
-      leading-[27px]
+   
       text-gray-400
       mt-0
       ">
             Copyright Ⓒ 2023. Разработка и продвижение
-            <a href="https://vi-tech.by" className="text-gradient text-cyan-400" target="_blank">{' '}VI:TECH</a> &nbsp; Информация на сайте не является публичной офертой и предоставляется исключительно в информационных целях.
+            <a href="https://vi-tech.by" className="text-gradient text-cyan-400" target="_blank">
+              {' '}VI:TECH
+            </a>
+            &nbsp; Информация на сайте не является публичной офертой и предоставляется исключительно в информационных целях.
           </p>
         </div>
       </div>
-    </section>
+    </footer>
   )
 }

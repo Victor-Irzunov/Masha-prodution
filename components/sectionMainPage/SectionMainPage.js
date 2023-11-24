@@ -25,7 +25,7 @@ function ImageComp({ image, title, alt }) {
 			<div ref={ref}>
 				<Image src={image} alt={alt} className="" />
 			</div>
-			<motion.div style={{ y }} className='w-8 h-8 p-2 rounded-full bg-black text-white'>#{title}</motion.div>
+			{/* <motion.div style={{ y }} className='w-8 h-8 p-2 rounded-full bg-black text-white'>#{title}</motion.div> */}
 		</div>
 	);
 }
@@ -73,7 +73,7 @@ const SectionMainPage = () => {
 							className="flex py-6 border-t border-[#bcbdbe] overflow-hidden"
 							variants={cardVariants}
 						>
-							<a href="/#" id={el.navId} >{''}</a>
+							{/* <a href="/#" id={el.navId} >{''}</a> */}
 							<div className="w-1/2 pl-0 pr-4">
 								<ImageComp image={el.img} title={el.id} alt={el.title} />
 							</div>

@@ -20,11 +20,13 @@ export default function RootLayout({ children }) {
         <MyContextProvider>
           <div className='flex'>
             <NavBarMenu />
-            <main className='sd:w-4/5 w-full pt-6'>
+            <div className='sd:w-4/5 w-full pt-6'>
+            <main className=''>
               {children}
             </main>
+              <FooterComp />
+            </div>
           </div>
-          <FooterComp />
         </MyContextProvider>
       </body>
     </html>
