@@ -30,13 +30,13 @@ const AboutPage = () => {
 						className='text-white sd:text-4xl xy:text-2xl font-bold mt-10'
 					// variants={titleAnimation}
 					>
-						Психолог Минск
+						Минск
 					</h2>
 				</div>
 
 				<div className='py-20'>
-					<div className='w-1/3 float-left sd:mr-10 xy:mr-4 sd:mb-5 xy:mb-1'>
-						<Image src={img} alt='' width={200} className='shadow-2xl rounded-lg' />
+					<div className='sd:w-auto xyy:w-1/3 float-left sd:mr-10 xy:mr-4 sd:mb-5 xy:mb-1'>
+						<Image src={img} alt='' width={300} className='shadow-2xl rounded-lg' />
 					</div>
 
 					<div className='text-[#191c1d]'>
