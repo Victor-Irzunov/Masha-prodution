@@ -1,3 +1,4 @@
+"use client"
 import foto from '../../public/images/fotoInfo/foto.webp'
 import svg from '../../public/images/fotoInfo/svgImg.svg'
 import Image  from 'next/image'
@@ -56,4 +57,4 @@ const FotoInfoMainPage = () => {
 		</motion.section>
 	)
 }
-export { FotoInfoMainPage }
+export default FotoInfoMainPage;

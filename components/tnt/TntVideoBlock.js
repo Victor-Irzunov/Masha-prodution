@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+"use client"
+import { useState } from 'react'
 import { motion } from "framer-motion"
 import { Button, Typography, Popover } from 'antd'
 import Link from 'next/link'
 import { InfoCircleTwoTone } from '@ant-design/icons'
 import { useScreens } from '../../constans/constScreens'
-const { Paragraph, Text } = Typography
+const { Paragraph } = Typography
 
 const TntVideoBlock = () => {
 	const [ellipsis, setEllipsis] = useState(true)

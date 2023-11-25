@@ -1,9 +1,9 @@
 import { Carousel } from 'antd'
 import Image from 'next/image'
-import slider1 from '../../public/images/slider/slider-1.png'
-import slider2 from '../../public/images/slider/slider-2.png'
-import slider3 from '../../public/images/slider/slider-3.png'
-import slider4 from '../../public/images/slider/slider-4.png'
+import slider1 from '../../public/images/slider/slider-1.webp'
+import slider2 from '../../public/images/slider/slider-2.webp'
+import slider3 from '../../public/images/slider/slider-3.webp'
+import slider4 from '../../public/images/slider/slider-4.webp'
 
 
 const SliderComp = () => (
@@ -23,4 +23,4 @@ const SliderComp = () => (
 	</Carousel>
 );
 
-export { SliderComp }
+export default SliderComp;

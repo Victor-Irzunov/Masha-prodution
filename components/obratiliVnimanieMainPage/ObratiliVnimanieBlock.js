@@ -1,8 +1,9 @@
+"use client"
 import Image from 'next/image'
 import { motion } from "framer-motion"
-import tnt from '../../public/images/obratili/tnt.png'
-import zoon from '../../public/images/obratili/zoon.png'
-import handshaker from '../../public/images/obratili/handshaker.png'
+import tnt from '../../public/images/obratili/tnt.webp'
+import zoon from '../../public/images/obratili/zoon.webp'
+import handshaker from '../../public/images/obratili/handshaker.webp'
 import { useScreens } from '../../constans/constScreens'
 
 const ObratiliVnimanieBlock = () => {
@@ -68,4 +69,4 @@ const ObratiliVnimanieBlock = () => {
 	)
 }
 
-export {ObratiliVnimanieBlock}
+export default ObratiliVnimanieBlock;

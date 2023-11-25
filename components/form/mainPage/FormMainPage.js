@@ -1,4 +1,5 @@
-import { Button, Checkbox, Form, Input, Select } from 'antd'
+"use client"
+import { Checkbox, Form, Input, Select } from 'antd'
 import React, { useState } from 'react'
 
 import InputMask from 'react-input-mask'

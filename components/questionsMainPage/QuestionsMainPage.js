@@ -1,3 +1,4 @@
+"use client"
 import { Collapse, Button } from 'antd'
 import { textCollapse } from '../../constans/Constans'
 import { motion } from "framer-motion"

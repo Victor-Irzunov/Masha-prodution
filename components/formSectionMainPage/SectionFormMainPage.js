@@ -1,12 +1,11 @@
+"use client"
 import { motion } from "framer-motion"
 import FormMainPage from '../form/mainPage/FormMainPage'
-// import { useScreens } from '../../constans/constScreens'
 import {
 	titleAnimation, titleAnimation2
 } from '../../constans/animation/AnimationConst'
 
 const SectionFormMainPage = () => {
-	// const screens = useScreens()
 	return (
 		<section
 			className='sd:px-10 xy:px-5 py-10 bg-[#191c1d]'

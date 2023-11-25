@@ -1,4 +1,4 @@
-// Photos from https://citizenofnowhe.re/lines-of-the-city
+"use client"
 import { useRef } from "react";
 import {
 	motion,
@@ -25,7 +25,6 @@ function ImageComp({ image, title, alt }) {
 			<div ref={ref}>
 				<Image src={image} alt={alt} className="" />
 			</div>
-			{/* <motion.div style={{ y }} className='w-8 h-8 p-2 rounded-full bg-black text-white'>#{title}</motion.div> */}
 		</div>
 	);
 }
@@ -62,7 +61,7 @@ const SectionMainPage = () => {
 						key={el.id}
 						whileInView="visible"
 						viewport={{
-							// once: true,
+							once: true,
 							amount: 0.7
 						}}
 						className="overflow-hidden"
@@ -73,7 +72,6 @@ const SectionMainPage = () => {
 							className="flex py-6 border-t border-[#bcbdbe] overflow-hidden"
 							variants={cardVariants}
 						>
-							{/* <a href="/#" id={el.navId} >{''}</a> */}
 							<div className="w-1/2 pl-0 pr-4">
 								<ImageComp image={el.img} title={el.id} alt={el.title} />
 							</div>
@@ -89,9 +87,8 @@ const SectionMainPage = () => {
 					</motion.div>
 				)
 			})}
-
 			<motion.div className="fixed left-0 right-0 h-1 bg-white bottom-2" style={{ scaleX }} />
 		</section>
 	);
 }
-export { SectionMainPage }
+export default SectionMainPage;

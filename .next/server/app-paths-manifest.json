@@ -1,11 +1,8 @@
 {
-  "/page": "app/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/robots.txt/route": "app/robots.txt/route.js",
-  "/uslugi/page": "app/uslugi/page.js",
-  "/stoimost-psihologa/page": "app/stoimost-psihologa/page.js",
+  "/page": "app/page.js",
   "/api/zapisi/route": "app/api/zapisi/route.js",
-  "/zapis-k-psikhologu/page": "app/zapis-k-psikhologu/page.js",
-  "/api/user/route": "app/api/user/route.js",
-  "/uslugi/[link]/page": "app/uslugi/[link]/page.js",
-  "/api/otzyvy/route": "app/api/otzyvy/route.js"
+  "/api/otzyvy/route": "app/api/otzyvy/route.js",
+  "/api/user/route": "app/api/user/route.js"
 }

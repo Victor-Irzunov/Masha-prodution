@@ -1,9 +1,9 @@
-import infertility from '../public/images/imgSection/infertility.jpg'
-import family from '../public/images/imgSection/family.jpg'
-import child from '../public/images/imgSection/child.jpg'
-import woman from '../public/images/imgSection/woman.jpg'
-import clinik from '../public/images/imgSection/clinik.jpg'
-import depression from '../public/images/imgSection/depression.jpg'
+import infertility from '../public/images/imgSection/infertility.webp'
+import family from '../public/images/imgSection/family.webp'
+import child from '../public/images/imgSection/child.webp'
+import woman from '../public/images/imgSection/woman.webp'
+import clinik from '../public/images/imgSection/clinik.webp'
+import depression from '../public/images/imgSection/depression.webp'
 import { HomeOutlined } from '@ant-design/icons'
 
 export const itemsSection = [

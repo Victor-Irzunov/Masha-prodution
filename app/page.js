@@ -1,53 +1,50 @@
-"use client"
 
 
-
-import { Button, Divider, FloatButton } from 'antd';
+import { Button, Divider } from 'antd';
 import { FormOutlined, PhoneOutlined } from '@ant-design/icons';
-import { SliderComp } from '../components/slider/SliderComp';
+// import { SliderComp } from '../components/slider/SliderComp';
 import Link from 'next/link';
-import { motion } from "framer-motion";
-import { BtnMenuNavigate } from '../components/btnMenuNavigateMainPage/BtnMenuNavigate';
-import { SectionMainPage } from '../components/sectionMainPage/SectionMainPage';
+// import { motion } from "framer-motion";
+// import { BtnMenuNavigate } from '../components/btnMenuNavigateMainPage/BtnMenuNavigate';
+// import { SectionMainPage } from '../components/sectionMainPage/SectionMainPage';
 // import { QuestionsMainPage } from '../components/questionsMainPage/QuestionsMainPage';
-import { FotoInfoMainPage } from '../components/fotoInfoMainPage/FotoInfoMainPage';
+// import { FotoInfoMainPage } from '../components/fotoInfoMainPage/FotoInfoMainPage';
 // import { TntVideoBlock } from '../components/tnt/TntVideoBlock';
-import { ObratiliVnimanieBlock } from '../components/obratiliVnimanieMainPage/ObratiliVnimanieBlock';
+// import { ObratiliVnimanieBlock } from '../components/obratiliVnimanieMainPage/ObratiliVnimanieBlock';
 import { OnlineMainPageSection } from '../components/onlineMainPage/OnlineMainPageSection';
 import { SectionFormMainPage } from '../components/formSectionMainPage/SectionFormMainPage';
 import { ContentSection } from '../components/contentSection/ContentSection';
-import { titleAnimation, imageAnimation } from '../constans/animation/AnimationConst';
+// import { titleAnimation, imageAnimation, titleAnimation2 } from '../constans/animation/AnimationConst';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
+const SliderComp = dynamic(() => import('../components/slider/SliderComp'));
+const BtnMenuNavigate = dynamic(() => import('../components/btnMenuNavigateMainPage/BtnMenuNavigate'));
 const QuestionsMainPage = dynamic(() => import('../components/questionsMainPage/QuestionsMainPage'));
 const TntVideoBlock = dynamic(() => import('../components/tnt/TntVideoBlock'));
+const SectionMainPage = dynamic(() => import('../components/sectionMainPage/SectionMainPage'));
+const FotoInfoMainPage = dynamic(() => import('../components/fotoInfoMainPage/FotoInfoMainPage'));
+const ObratiliVnimanieBlock = dynamic(() => import('../components/obratiliVnimanieMainPage/ObratiliVnimanieBlock'));
+
+
 
 const Home = () => {
   return (
     <section className='mt-6 overflow-hidden pt-8'>
 
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
+      <div
         className='sd:px-10 xy:px-5'
       >
         <div className=''>
-          <motion.h1
-            variants={titleAnimation}
-            custom={1}
+          <h1
             className='text-[#191c1d] sd:text-8xl xy:text-4xl font-semibold'>
             Психолог
             <span className='text-white'>
               {' '} Минск
             </span>
-          </motion.h1>
+          </h1>
 
 
-          <motion.div
-            variants={titleAnimation}
-            custom={4}
-            className='flex flex-col md:flex-row md:mt-16'
-          >
+          <div className='flex flex-col md:flex-row md:mt-16'>
             <div className='flex-shrink-0 sd:pr-8 xyy:pr-0 rounded-md md:order-1 xyy:my-8 sd:my-0'>
               <Image
                 src='/images/main/main.webp'
@@ -64,36 +61,27 @@ const Home = () => {
                 Здравствуйте, я рада представиться вам как одна из немногих сертифицированных клинических психологов, практикующих в Минске и обладающих более чем 8-летним профессиональным стажем. Моя основная цель заключается в оказании вам помощи и поддержки. Мое обширное поле экспертизы включает все аспекты психологических и эмоциональных трудностей, которые вы можете встретить в своей жизни. Я готова помочь вам справиться с психологическим бесплодием, депрессией, паникой, обсессивно-компульсивным расстройством, проблемами в отношениях, связанными с тревогой, физическими и эмоциональными расстройствами, а также с проблемами со сном, стрессом, навязчивыми мыслями, семейными и супружескими конфликтами, социальной тревожностью и посттравматическими расстройствами. Позвольте мне быть рядом с вами и помочь вам на вашем пути к благополучию и психологическому здоровью.
               </p>
             </div>
-          </motion.div>
+          </div>
 
         </div>
         <div className='w-full flex justify-around mt-20 xy:items-center xx:items-center sd:items-start xx:flex-col xy:flex-col sd:flex-row'
         >
-          <motion.div
-            variants={titleAnimation}
-            custom={8}
-            className='mb-5'
-          >
-            <Button type='primary' style={{ background: "" }} shape="round" size='large' icon={<FormOutlined />}>
-              <Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/zapis-k-psikhologu`}>
+          <div className='mb-5'>
+            <Button type='primary' style={{ color: "#fff" }} shape="round" size='large' icon={<FormOutlined />}>
+              <Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/zapis-k-psikhologu`} className='text-white'>
                 {' '}записаться на консультацию
               </Link>
             </Button>
-          </motion.div>
-          <motion.div
-            variants={titleAnimation}
-            custom={10}
-            className='z-10'
-          >
+          </div>
+          <div className='z-10'>
             <BtnMenuNavigate />
-          </motion.div>
+          </div>
         </div>
-        <motion.div
-          variants={imageAnimation}
+        <div
           className='mt-8 text-center '>
           <SliderComp />
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
 
       <SectionMainPage />
       <Divider />
@@ -111,7 +99,7 @@ const Home = () => {
           />
         </div>
       </a>
-      <FloatButton.BackTop />
+      {/* <FloatButton.BackTop /> */}
     </section>
   )
 }

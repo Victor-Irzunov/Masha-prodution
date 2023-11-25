@@ -1,3 +1,4 @@
+"use client"
 import { motion } from "framer-motion"
 import { yCustomAnimation } from '../../constans/animation/AnimationConst'
 import questions from '../../public/images/main/man-question.png'
