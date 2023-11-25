@@ -24,6 +24,7 @@ const BlogPage = () => {
 	useEffect(() => {
 		getAllArticle()
 			.then(data => {
+				console.log("🚀 🚀 🚀 getAllArticle _ data: ", data)
 				if (data) {
 					setData(data)
 				}
@@ -34,7 +35,7 @@ const BlogPage = () => {
 	const countPlusOne = (id) => {
 		userViewArticle(id)
 			.then(data => {
-				console.log("🚀 🚀 🚀  _ file: page.js:37 _ countPlusOne _ data:", data)
+				console.log("🚀 🚀 🚀countPlusOne _ data:", data)
 			})
 	}
 
@@ -60,9 +61,7 @@ const BlogPage = () => {
 				</motion.h2>
 			</motion.div>
 
-
 			<div className='h-20'></div>
-
 			{
 				data.length ? data.map(el => {
 					let img
@@ -70,15 +69,10 @@ const BlogPage = () => {
 					return (
 						<div
 							className='sd:px-10 xy:px-5'
-							// initial="hidden"
-							// whileInView="visible"
 							key={el.id}
 						>
 							<div
-								className='flex items-start mb-10'
-							// variants={yCustomAnimation}
-							// custom={el.id + 2}
-							>
+								className='flex items-start mb-10'>
 								<div className='sd:w-1/5 xy:w-1/3 mr-7'>
 									<Image
 										src={`/uploads/${img}`}
@@ -112,7 +106,6 @@ const BlogPage = () => {
 											{el.description}
 										</p>
 									}
-
 									<div className='flex 
 														justify-start 
 														sd:items-center
@@ -128,7 +121,6 @@ const BlogPage = () => {
 												{moment(el.dateTime).format('LLL')}
 											</span>
 										</div>
-
 
 										<div className='flex 
 														justify-start 

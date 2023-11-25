@@ -1,7 +1,8 @@
 {
-  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/page": "app/page.js",
-  "/api/zapisi/route": "app/api/zapisi/route.js",
-  "/api/otzyvy/route": "app/api/otzyvy/route.js",
-  "/api/user/route": "app/api/user/route.js"
+  "/admin/page": "app/admin/page.js",
+  "/uslugi/[link]/page": "app/uslugi/[link]/page.js",
+  "/blog/page": "app/blog/page.js",
+  "/api/article/group/[group]/route": "app/api/article/group/[group]/route.js",
+  "/blog/[link]/[id]/page": "app/blog/[link]/[id]/page.js"
 }
