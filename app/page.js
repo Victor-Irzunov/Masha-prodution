@@ -1,21 +1,26 @@
 "use client"
-import { Button, Divider, FloatButton } from 'antd'
-import { FormOutlined, PhoneOutlined } from '@ant-design/icons'
-import { SliderComp } from '../components/slider/SliderComp'
-import Link from 'next/link'
-import { motion } from "framer-motion"
-import { BtnMenuNavigate } from '../components/btnMenuNavigateMainPage/BtnMenuNavigate'
-import { SectionMainPage } from '../components/sectionMainPage/SectionMainPage'
-// import TextAnimationScroll from '@/components/textAnimationScroll/TextAnimationScroll'
-import { QuestionsMainPage } from '../components/questionsMainPage/QuestionsMainPage'
-import { FotoInfoMainPage } from '../components/fotoInfoMainPage/FotoInfoMainPage'
-import { TntVideoBlock } from '../components/tnt/TntVideoBlock'
-import { ObratiliVnimanieBlock } from '../components/obratiliVnimanieMainPage/ObratiliVnimanieBlock'
-import { OnlineMainPageSection } from '../components/onlineMainPage/OnlineMainPageSection'
-import { SectionFormMainPage } from '../components/formSectionMainPage/SectionFormMainPage'
-import { ContentSection } from '../components/contentSection/ContentSection'
-import { titleAnimation, imageAnimation } from '../constans/animation/AnimationConst'
-import Image from 'next/image'
+
+
+
+import { Button, Divider, FloatButton } from 'antd';
+import { FormOutlined, PhoneOutlined } from '@ant-design/icons';
+import { SliderComp } from '../components/slider/SliderComp';
+import Link from 'next/link';
+import { motion } from "framer-motion";
+import { BtnMenuNavigate } from '../components/btnMenuNavigateMainPage/BtnMenuNavigate';
+import { SectionMainPage } from '../components/sectionMainPage/SectionMainPage';
+// import { QuestionsMainPage } from '../components/questionsMainPage/QuestionsMainPage';
+import { FotoInfoMainPage } from '../components/fotoInfoMainPage/FotoInfoMainPage';
+// import { TntVideoBlock } from '../components/tnt/TntVideoBlock';
+import { ObratiliVnimanieBlock } from '../components/obratiliVnimanieMainPage/ObratiliVnimanieBlock';
+import { OnlineMainPageSection } from '../components/onlineMainPage/OnlineMainPageSection';
+import { SectionFormMainPage } from '../components/formSectionMainPage/SectionFormMainPage';
+import { ContentSection } from '../components/contentSection/ContentSection';
+import { titleAnimation, imageAnimation } from '../constans/animation/AnimationConst';
+import Image from 'next/image';
+import dynamic from 'next/dynamic';
+const QuestionsMainPage = dynamic(() => import('../components/questionsMainPage/QuestionsMainPage'));
+const TntVideoBlock = dynamic(() => import('../components/tnt/TntVideoBlock'));
 
 const Home = () => {
   return (
@@ -50,6 +55,7 @@ const Home = () => {
                 width={370}
                 height={370}
                 className='rounded-md shadow-md'
+                loading="eager"
               />
             </div>
 
@@ -59,10 +65,6 @@ const Home = () => {
               </p>
             </div>
           </motion.div>
-
-
-
-
 
         </div>
         <div className='w-full flex justify-around mt-20 xy:items-center xx:items-center sd:items-start xx:flex-col xy:flex-col sd:flex-row'

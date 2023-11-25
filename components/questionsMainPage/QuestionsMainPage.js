@@ -86,4 +86,4 @@ const QuestionsMainPage = () => {
 		</div>
 	)
 }
-export { QuestionsMainPage }
+export default QuestionsMainPage;

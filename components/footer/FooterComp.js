@@ -50,14 +50,10 @@ export const FooterComp = () => {
     }
   }
 
-
-
   return (
     <footer className='sd:px-10 xy:px-5 pt-10 bg-white h-[80vh] flex overflow-hidden'>
       <FloatButton.BackTop />
-      <div className='w-1/5 xy:hidden sd:block'></div>
-
-      <div className='sd:ml-20 xy:ml-0 flex flex-col justify-between'>
+      <div className='sd:ml-10 xy:ml-0 flex flex-col justify-between'>
         <div>
           <motion.div
             initial="hidden"

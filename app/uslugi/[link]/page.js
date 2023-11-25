@@ -7,62 +7,71 @@ import Link from 'next/link'
 import { ScrollComp } from '../../../components/scroll/ScrollComp'
 import LinkArticleClient from '../../../components/linkArticleClient/LinkArticleClient'
 
-
 export function generateMetadata({ params: { link } }) {
-	let title
-	let description
+	let title;
+	let description;
+ 
 	switch (link) {
-
-		case 'besplodie':
-			title = 'Перинатальный психолог в Минске'
-			description = 'Консультация перинатального психолога в Минске по вопросам бесплодия, планирования беременности, подготовки к родам и материнства.'
-			break
-
-		case 'semeinii-psikholog':
-			title = 'Семейный психолог в Минске'
-			description = 'Консультация семейного психолога в Минске по вопросам семейных и супружеских отношений, воспитания детей, конфликтов в семье.'
-			break
-
-		case 'psikholog-dlya-podrostka':
-			title = 'Подростковый психолог в Минске'
-			description = 'Консультация подросткового психолога в Минске по проблемам взаимоотношений со сверстниками, родителями, трудностям подросткового возраста.'
-			break
-
-		case 'zhenskii-psikholog':
-			title = 'Женский психолог в Минске'
-			description = 'Консультация женского психолога в Минске по женской психологии, отношениям, кризисам в жизни женщины.'
-			break
-
-		case 'lechenie-depressii':
-			title = 'Лечение депрессии в Минске'
-			description = 'Консультация психолога в Минске по вопросам диагностики и лечения депрессии, тревожных расстройств, кризисных состояний.'
-			break
-
-		case 'klinicheskij-psikholog':
-			title = 'Клинический психолог в Минске'
-			description = 'Консультация клинического психолога в Минске по различным психологическим проблемам, расстройствам, методам психотерапии.'
-			break
-
-		case 'individualnaya-konsultatsiya':
-			title = 'Индивидуальная консультация психолога в Минске'
-			description = 'Индивидуальная консультация психолога в Минске по личным, семейным, детско-родительским и другим психологическим вопросам.'
-			break
-		case 'konsultatsiya-perinatalnogo-psikhologa':
-			title = 'Перинатальный психолог в Минске | Психолог Ирзунова Мария'
-			description = 'Перинатальный психолог Ирзунова Мария в Минске поможет подготовиться к родам и материнству, справиться с послеродовой депрессией, тревогой и страхами. Психотерапия для беременных, рожениц и мам.'
-			break
+	  case 'besplodie':
+		 title = 'Перинатальный психолог в Минске';
+		 description = 'Консультация перинатального психолога в Минске по вопросам бесплодия, планирования беременности, подготовки к родам и материнства.';
+		 break;
+ 
+	  case 'semeinii-psikholog':
+		 title = 'Семейный психолог в Минске';
+		 description = 'Консультация семейного психолога в Минске по вопросам семейных и супружеских отношений, воспитания детей, конфликтов в семье.';
+		 break;
+ 
+	  case 'psikholog-dlya-podrostka':
+		 title = 'Подростковый психолог в Минске';
+		 description = 'Консультация подросткового психолога в Минске по проблемам взаимоотношений со сверстниками, родителями, трудностям подросткового возраста.';
+		 break;
+ 
+	  case 'zhenskii-psikholog':
+		 title = 'Женский психолог в Минске';
+		 description = 'Консультация женского психолога в Минске по женской психологии, отношениям, кризисам в жизни женщины.';
+		 break;
+ 
+	  case 'lechenie-depressii':
+		 title = 'Лечение депрессии в Минске';
+		 description = 'Консультация психолога в Минске по вопросам диагностики и лечения депрессии, тревожных расстройств, кризисных состояний.';
+		 break;
+ 
+	  case 'klinicheskij-psikholog':
+		 title = 'Клинический психолог в Минске';
+		 description = 'Консультация клинического психолога в Минске по различным психологическим проблемам, расстройствам, методам психотерапии.';
+		 break;
+ 
+	  case 'individualnaya-konsultatsiya':
+		 title = 'Индивидуальная консультация психолога в Минске';
+		 description = 'Индивидуальная консультация психолога в Минске по личным, семейным, детско-родительским и другим психологическим вопросам.';
+		 break;
+ 
+	  case 'konsultatsiya-perinatalnogo-psikhologa':
+		 title = 'Перинатальный психолог в Минске | Психолог Ирзунова Мария';
+		 description = 'Перинатальный психолог Ирзунова Мария в Минске поможет подготовиться к родам и материнству, справиться с послеродовой депрессией, тревогой и страхами. Психотерапия для беременных, рожениц и мам.';
+		 break;
 	}
-
+ 
 	return {
-		title: title,
-		description: description
-	}
-}
+	  title: title,
+	  description: description,
+	  alternates: {
+		 canonical: `https://irzunova.by/${link}`,
+	  },
+	  og: {
+		 title: title,
+		 description: description,
+		 type: 'website',
+		 url: `https://irzunova.by/${link}`,
+		 image: '/images/main/main.webp',
+	  },
+	};
+ }
+ 
 
 const UniversalPage = async ({ params: { link } }) => {
 	const { data, extraArticles } = await useDataService(link);
-
-
 
 	return (
 		<main className='pt-20 overflow-hidden'>

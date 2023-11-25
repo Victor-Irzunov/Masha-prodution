@@ -71,7 +71,6 @@ export const NavBarMenu = observer(() => {
 	}
 
 	return (
-
 		screens.lg ?
 			<header className='w-1/5 border-r border-[#bcbdbe] overflow-hidden'>
 				<nav className='bg-[#cdcecf] h-screen fixed top-0 left-0 pl-10 pr-10 pt-20 pb-2'>
@@ -94,25 +93,10 @@ export const NavBarMenu = observer(() => {
 														key={el.key}
 														custom={el.key}
 														className='mb-3'>
-														{/* <Link href={`${transliterate(el.link)}`} */}
 														<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}${el.link}`}
-															className='
-										relative
-										before:border-b
-										before:border-black
-										before:transition-all
-										 before:duration-300 
-										 before:ease-in-out
-										before:absolute 
-										before:-bottom-1 
-										before:h-0
-										hover:before:h-full
-										before:w-0
-										hover:before:w-full
-										'
+															className='relative before:border-b before:border-black before:transition-all before:duration-300 before:ease-in-out before:absolute before:-bottom-1 before:h-0 hover:before:h-full before:w-0 hover:before:w-full'
 														>
 															{el.label}
-															{/* <span className='lowercase text-xs block'>{el.span && el.span}</span> */}
 														</Link>
 													</li>
 												)
@@ -124,31 +108,18 @@ export const NavBarMenu = observer(() => {
 													key={el.key}
 													custom={el.key}
 													className='mb-3'>
-													<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}${el.link}`}
-												
-														className='
-										relative
-										before:border-b
-										before:border-black
-										before:transition-all
-										 before:duration-300 
-										 before:ease-in-out
-										before:absolute 
-										before:-bottom-1 
-										before:h-0
-										hover:before:h-full
-										before:w-0
-										hover:before:w-full
-										'
+													<Link
+														href={`${process.env.NEXT_PUBLIC_BASE_URL}${el.link}`}
+														className='relative before:border-b before:border-black before:transition-all before:duration-300 before:ease-in-out before:absolute before:-bottom-1 before:h-0 hover:before:h-full before:w-0 hover:before:w-full'
 													>
 														{el.label}
-														<span className='lowercase text-xs block'>{el.span && el.span}</span>
-
+														<span className='lowercase text-xs block'>
+															{el.span && el.span}
+														</span>
 													</Link>
 												</motion.li>
 											)
 										}
-
 									})
 								}
 								{
@@ -173,9 +144,8 @@ export const NavBarMenu = observer(() => {
 							variants={imgAnimation}
 							custom={16}
 							className='text-center'>
-						<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}`}>
-								
-							<Image
+							<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}`}>
+								<Image
 									src={avatar}
 									className='border-lime-600 shadow-2xl rounded-full w-20 mx-auto'
 									alt='Аватар психолога Ирзуновой Марии'

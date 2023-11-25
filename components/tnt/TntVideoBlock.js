@@ -113,4 +113,4 @@ const TntVideoBlock = () => {
 	)
 }
 
-export { TntVideoBlock }
+export default TntVideoBlock 

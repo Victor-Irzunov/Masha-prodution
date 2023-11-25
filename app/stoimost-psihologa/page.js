@@ -1,12 +1,16 @@
-// import { motion } from "framer-motion"
-// import {
-// 	titleAnimation,
-// 	titleAnimation2
-// } from '../../constans/animation/AnimationConst'
-
 export const metadata = {
 	title: 'Психолог Минск цена | Ирзунова Мария',
 	description: 'Стоимость консультации психолога в Минске. ☝ Лучший частный психолог принимает в Минске. Узнать стоимость услуги и записаться ✍️ на консультацию.',
+	alternates: {
+		canonical: 'https://irzunova.by/stoimost-psihologa'
+  },
+  og: {
+    title: 'Психолог Минск цена | Ирзунова Мария',
+    description: 'Стоимость консультации психолога в Минске. ☝ Лучший частный психолог принимает в Минске. Узнать стоимость услуги и записаться ✍️ на консультацию.',
+    type: 'website',
+    url: 'https://irzunova.by/stoimost-psihologa',
+    image: '/images/main/main.webp',
+  },
 }
 
 
@@ -15,20 +19,14 @@ const PricePage = () => {
 	return (
 		<section className='pt-10'>
 
-			<div
-				// initial="hidden"
-				// whileInView="visible"
-				className='sd:px-10 xy:px-5'
-			>
+			<div className='sd:px-10 xy:px-5'>
 				<h1
 					className='sd:text-6xl xy:text-4xl text-[#191c1d] font-extrabold uppercase'
-				// variants={titleAnimation2}
 				>
 					Цена психолога в Минске
 				</h1>
 				<h2
 					className='text-white sd:text-4xl xy:text-2xl font-bold mt-20'
-				// variants={titleAnimation}
 				>
 					Прейскурант цен за одну консультацию психолога
 				</h2>
@@ -49,7 +47,6 @@ const PricePage = () => {
 					<div className='w-1/4 h-20 shadow-lg bg-gray-700 flex justify-center items-center m-0.5'>
 						<div className='text-center'>
 							<p className='uppercase text-white sd:text-[10px] xy:text-[8px] mb-0'>приём</p>
-							{/* <p className='uppercase text-white text-[9px] mb-0'>сеансов</p> */}
 						</div>
 					</div>
 				</div>
@@ -147,14 +144,9 @@ const PricePage = () => {
 
 			<section className='sd:px-10 xy:px-5 py-10 bg-[#191c1d] mt-20'>
 				<div className='container'>
-					<div
-						className=''
-					// initial="hidden"
-					// whileInView="visible"
-					>
+					<div className=''>
 						<div
 							className='sd:text-lg xy:text-sm font-light tracking-wider text-white'
-						// variants={titleAnimation}
 						>
 							<h3 className="text-lg font-bold mb-3">
 								Стоимость консультации психолога
@@ -185,11 +177,7 @@ const PricePage = () => {
 							</p>
 
 						</div>
-						<div
-							className='w-[60%] pt-10'
-						// variants={titleAnimation2}
-						>
-						</div>
+						<div className='w-[60%] pt-10'/>
 					</div>
 				</div>
 			</section>

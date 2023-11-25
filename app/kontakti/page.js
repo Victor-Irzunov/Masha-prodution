@@ -48,7 +48,7 @@ const ContactPage = () => {
 
 
 				<div className='mt-20'>
-				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A13632a79566de3a4367a89776aa7d1e9ee8f8df9da959c82cd3e50274c03b0bb&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A13632a79566de3a4367a89776aa7d1e9ee8f8df9da959c82cd3e50274c03b0bb&amp;source=constructor" width="100%" height="400" frameBorder="0"></iframe>
 				</div>
 			</div>
 		</section>

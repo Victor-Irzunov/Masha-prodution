@@ -6,13 +6,6 @@ import slider3 from '../../public/images/slider/slider-3.png'
 import slider4 from '../../public/images/slider/slider-4.png'
 
 
-
-
-// const contentStyle = {
-// 	height: '160px',
-// 	lineHeight: '160px',
-// 	textAlign: 'center',
-// };
 const SliderComp = () => (
 	<Carousel autoplay dots={false}>
 		<div>

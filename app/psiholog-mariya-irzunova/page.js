@@ -6,35 +6,40 @@ import img from '../../public/images/about/1.webp'
 
 
 export const metadata = {
-	title: 'Психолог Мария Ирзунова в Минске',
-	description: 'Психолог Мария Ирзунова специализируется на консультировании взрослых и подростков по вопросам личностного роста, коррекции поведения, преодоления стресса и тревожных состояний. Ценит индивидуальный подход к каждому клиенту. Помогает найти эффективные решения сложных психологических проблем.',
-}
+	title: 'Психолог Мария Ирзунова: Консультации в Минске',
+	description: 'Психолог Мария Ирзунова специализируется на консультировании взрослых и подростков, помогая в решении вопросов личностного роста, коррекции поведения, преодоления стресса и тревожных состояний. Она ценит индивидуальный подход к каждому клиенту, помогая им найти эффективные решения сложных психологических проблем.',
+	alternates: {
+	  canonical: 'https://irzunova.by/psiholog-mariya-irzunova',
+	},
+	og: {
+	  title: 'Психолог Мария Ирзунова: Консультации в Минске',
+	  description: 'Психолог Мария Ирзунова специализируется на консультировании взрослых и подростков, помогая в решении вопросов личностного роста, коррекции поведения, преодоления стресса и тревожных состояний. Она ценит индивидуальный подход к каждому клиенту, помогая им найти эффективные решения сложных психологических проблем.',
+	  type: 'website',
+	  url: 'https://irzunova.by/psiholog-mariya-irzunova',
+	  image: '/images/main/main.webp',
+	},
+ };
+ 
 
 
 const AboutPage = () => {
 	return (
 		<section className='pt-10'>
 			<div className='container mx-auto'>
-				<div
-					// initial="hidden"
-					// whileInView="visible"
-					className=''
-				>
+				<div className=' sd:pl-5 xyy:pl-0'>
 					<h1
 						className='sd:text-8xl xy:text-4xl text-[#191c1d] font-extrabold uppercase'
-					// variants={titleAnimation2}
 					>
 						Психолог Мария Ирзунова
 					</h1>
 					<h2
 						className='text-white sd:text-4xl xy:text-2xl font-bold mt-10'
-					// variants={titleAnimation}
 					>
 						Минск
 					</h2>
 				</div>
 
-				<div className='py-20'>
+				<div className='py-20 sd:pl-5 xyy:pl-0'>
 					<div className='sd:w-auto xyy:w-1/3 float-left sd:mr-10 xy:mr-4 sd:mb-5 xy:mb-1'>
 						<Image src={img} alt='' width={300} className='shadow-2xl rounded-lg' />
 					</div>

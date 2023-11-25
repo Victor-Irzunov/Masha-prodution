@@ -1,13 +1,3 @@
-
-// import { motion } from "framer-motion"
-// import {
-// 	titleAnimation,
-// 	titleAnimation2,
-// 	xCustomAnimation,
-// 	xCustomAnimation2,
-// 	yAnimation,
-// } from '../../constans/animation/AnimationConst'
-
 import { Divider, Tooltip } from 'antd'
 import Link from "next/link"
 import { data } from '../../constans/servicePage/ServicePageConst'
@@ -15,8 +5,18 @@ import { transliterate } from "../../transliterate/transliterate"
 import Image from 'next/image'
 
 export const metadata = {
-	title: 'Услуги психолога в Минске | Психолог Ирзунова Мария',
+	title: 'Услуги психолога в Минске | Консультация психолога Ирзуновой Марии',
 	description: 'Опытный психолог Ирзунова Мария предлагает профессиональную помощь и поддержку в Минске. Консультации для взрослых, детей и семей по широкому спектру психологических проблем.',
+	alternates: {
+		canonical: 'https://irzunova.by/uslugi'
+  },
+  og: {
+    title: 'Услуги психолога в Минске | Консультация психолога Ирзуновой Марии',
+    description: 'Опытный психолог Ирзунова Мария предлагает профессиональную помощь и поддержку в Минске. Консультации для взрослых, детей и семей по широкому спектру психологических проблем.',
+    type: 'website',
+    url: 'https://irzunova.by/uslugi',
+    image: '/images/main/main.webp',
+  },
  }
 
 const ServicePage = () => {
@@ -25,13 +25,10 @@ const ServicePage = () => {
 		<section className='pt-10'>
 			{/* <FloatButton.BackTop /> */}
 			<div
-				// initial="hidden"
-				// whileInView="visible"
 				className='sd:px-10 xy:px-5 mb-12'
 			>
 				<h1
 					className='sd:text-6xl xy:text-4xl text-[#191c1d] font-extrabold uppercase'
-				// variants={titleAnimation2}
 				>
 					Консультация психолога
 					<span className='text-white'>
