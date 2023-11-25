@@ -1,10 +1,11 @@
 "use client"
-import { useState } from 'react'
-import { motion } from "framer-motion"
-import { Button, Typography, Popover } from 'antd'
-import Link from 'next/link'
-import { InfoCircleTwoTone } from '@ant-design/icons'
-import { useScreens } from '../../constans/constScreens'
+import { useState } from 'react';
+import { motion } from "framer-motion";
+import { Button, Typography, Popover } from 'antd';
+import Link from 'next/link';
+import { InfoCircleTwoTone } from '@ant-design/icons';
+import { useScreens } from '../../constans/constScreens';
+import YouTube from 'react-youtube';
 const { Paragraph } = Typography
 
 const TntVideoBlock = () => {
@@ -51,7 +52,8 @@ const TntVideoBlock = () => {
 				<div className=''>
 					<h3 className='sd:text-8xl xy:text-4xl font-extrabold mb-6'>Гость на <span className='text-[#cdcecf]'>ТНТ</span></h3>
 				</div>
-				<div className='relative'>
+
+				{/* <div className='relative'>
 					<iframe
 						className='w-full sd:h-[550px] xy:h-[200px]'
 						src={!isActive ? "https://www.youtube.com/embed/TuvaAqoY6m8" : "https://www.youtube.com/embed/TuvaAqoY6m8?&autoplay=1"}
@@ -80,7 +82,30 @@ const TntVideoBlock = () => {
 							смотреть
 						</Button>
 					</div>
+				</div> */}
+
+				<div className='relative'>
+					{isActive ? (
+						<YouTube videoId='TuvaAqoY6m8' opts={{ width: '100%', height: screens.lg ? 550 : 200 }} />
+					) : (
+						<div
+							className={`w-full h-[30vh] bg-gradient-to-b from-zinc-400/70 to-gray-200/70 flex justify-center items-center ${isActive && 'hidden'
+								}`}
+						>
+							<Button
+								shape='round'
+								size={screens.lg ? 'large' : 'small'}
+								className='uppercase text-white tracking-widest'
+								onClick={() => setIsActive(true)}
+								style={{ padding: '1.5em', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+							>
+								смотреть
+							</Button>
+						</div>
+					)}
 				</div>
+
+
 				<Paragraph
 					ellipsis={
 						ellipsis
@@ -114,4 +139,4 @@ const TntVideoBlock = () => {
 	)
 }
 
-export default TntVideoBlock 
+export default TntVideoBlock;

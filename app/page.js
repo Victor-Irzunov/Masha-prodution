@@ -1,20 +1,9 @@
-
-
 import { Button, Divider } from 'antd';
 import { FormOutlined, PhoneOutlined } from '@ant-design/icons';
-// import { SliderComp } from '../components/slider/SliderComp';
 import Link from 'next/link';
-// import { motion } from "framer-motion";
-// import { BtnMenuNavigate } from '../components/btnMenuNavigateMainPage/BtnMenuNavigate';
-// import { SectionMainPage } from '../components/sectionMainPage/SectionMainPage';
-// import { QuestionsMainPage } from '../components/questionsMainPage/QuestionsMainPage';
-// import { FotoInfoMainPage } from '../components/fotoInfoMainPage/FotoInfoMainPage';
-// import { TntVideoBlock } from '../components/tnt/TntVideoBlock';
-// import { ObratiliVnimanieBlock } from '../components/obratiliVnimanieMainPage/ObratiliVnimanieBlock';
 import { OnlineMainPageSection } from '../components/onlineMainPage/OnlineMainPageSection';
 import { SectionFormMainPage } from '../components/formSectionMainPage/SectionFormMainPage';
 import { ContentSection } from '../components/contentSection/ContentSection';
-// import { titleAnimation, imageAnimation, titleAnimation2 } from '../constans/animation/AnimationConst';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
 const SliderComp = dynamic(() => import('../components/slider/SliderComp'));
@@ -24,8 +13,6 @@ const TntVideoBlock = dynamic(() => import('../components/tnt/TntVideoBlock'));
 const SectionMainPage = dynamic(() => import('../components/sectionMainPage/SectionMainPage'));
 const FotoInfoMainPage = dynamic(() => import('../components/fotoInfoMainPage/FotoInfoMainPage'));
 const ObratiliVnimanieBlock = dynamic(() => import('../components/obratiliVnimanieMainPage/ObratiliVnimanieBlock'));
-
-
 
 const Home = () => {
   return (
@@ -43,7 +30,6 @@ const Home = () => {
             </span>
           </h1>
 
-
           <div className='flex flex-col md:flex-row md:mt-16'>
             <div className='flex-shrink-0 sd:pr-8 xyy:pr-0 rounded-md md:order-1 xyy:my-8 sd:my-0'>
               <Image
@@ -55,14 +41,12 @@ const Home = () => {
                 loading="eager"
               />
             </div>
-
             <div className='flex-grow md:order-2'>
               <p className='leading-6 tracking-wide font-light sd:text-base xyy:text-sm text-justify'>
                 Здравствуйте, я рада представиться вам как одна из немногих сертифицированных клинических психологов, практикующих в Минске и обладающих более чем 8-летним профессиональным стажем. Моя основная цель заключается в оказании вам помощи и поддержки. Мое обширное поле экспертизы включает все аспекты психологических и эмоциональных трудностей, которые вы можете встретить в своей жизни. Я готова помочь вам справиться с психологическим бесплодием, депрессией, паникой, обсессивно-компульсивным расстройством, проблемами в отношениях, связанными с тревогой, физическими и эмоциональными расстройствами, а также с проблемами со сном, стрессом, навязчивыми мыслями, семейными и супружескими конфликтами, социальной тревожностью и посттравматическими расстройствами. Позвольте мне быть рядом с вами и помочь вам на вашем пути к благополучию и психологическому здоровью.
               </p>
             </div>
           </div>
-
         </div>
         <div className='w-full flex justify-around mt-20 xy:items-center xx:items-center sd:items-start xx:flex-col xy:flex-col sd:flex-row'
         >
@@ -82,7 +66,6 @@ const Home = () => {
           <SliderComp />
         </div>
       </div>
-
       <SectionMainPage />
       <Divider />
       <QuestionsMainPage />

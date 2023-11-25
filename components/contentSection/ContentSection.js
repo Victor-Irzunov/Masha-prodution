@@ -16,6 +16,9 @@ const ContentSection = () => {
 						className='mb-20'
 						initial="hidden"
 						whileInView="visible"
+						viewport={{
+							once: true,
+						}}
 					>
 						<motion.div
 							className=''
@@ -73,6 +76,9 @@ const ContentSection = () => {
 						className='mb-6'
 						initial="hidden"
 						whileInView="visible"
+						viewport={{
+							once: true,
+						}}
 					>
 						<motion.div
 							className=''
@@ -108,6 +114,9 @@ const ContentSection = () => {
 						className='mb-20 mt-20'
 						initial="hidden"
 						whileInView="visible"
+						viewport={{
+							once: true,
+						}}
 					>
 						<motion.div
 							className=''
@@ -164,6 +173,9 @@ const ContentSection = () => {
 						className='mb-6'
 						initial="hidden"
 						whileInView="visible"
+						viewport={{
+							once: true,
+						}}
 					>
 						<motion.div
 							className=''

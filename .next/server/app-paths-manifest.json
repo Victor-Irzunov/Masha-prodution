@@ -1,8 +1,8 @@
 {
+  "/page": "app/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/robots.txt/route": "app/robots.txt/route.js",
-  "/page": "app/page.js",
+  "/api/user/route": "app/api/user/route.js",
   "/api/zapisi/route": "app/api/zapisi/route.js",
-  "/api/otzyvy/route": "app/api/otzyvy/route.js",
-  "/api/user/route": "app/api/user/route.js"
+  "/api/otzyvy/route": "app/api/otzyvy/route.js"
 }
