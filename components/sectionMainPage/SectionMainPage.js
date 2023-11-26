@@ -78,7 +78,7 @@ const SectionMainPage = () => {
 							<div className="w-1/2">
 								<h2 className="sd:text-4xl xy:text-xl font-bold ">{el.title}</h2>
 								<h3 className="sd:text-xl xy:text-sm text-white">{el.content}</h3>
-								<Link href={el.link} className="duration-150 sd:text-lg xy:text-xs mt-10 hover:mr-2">
+								<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}${el.link}`} className="duration-150 sd:text-lg xy:text-xs mt-10 hover:mr-2">
 									перейти на страницу
 								</Link>
 								<ArrowRightOutlined className="sd:text-sm xy:text-xs ml-1" />
@@ -87,7 +87,7 @@ const SectionMainPage = () => {
 					</motion.div>
 				)
 			})}
-			<motion.div className="fixed left-0 right-0 h-1 bg-white bottom-2" style={{ scaleX }} />
+			{/* <motion.div className="fixed left-0 right-0 h-1 bg-white bottom-2" style={{ scaleX }} /> */}
 		</section>
 	);
 }

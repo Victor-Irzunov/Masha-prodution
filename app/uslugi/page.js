@@ -63,7 +63,7 @@ const ServicePage = () => {
 							</div>
 							<div className='sd:p-5 xy:p-2 font-light xy:w-8/12 sd:w-full'>
 								<h3 className='sd:text-lg xy:text-base'>
-									<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}uslugi/${transliterate(el.link.split(' ').join('-'))}`}
+									<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/uslugi/${transliterate(el.link.split(' ').join('-'))}`}
 										className='border-b border-black'
 									>
 										{el.h3}

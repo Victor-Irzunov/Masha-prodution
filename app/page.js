@@ -17,7 +17,6 @@ const ObratiliVnimanieBlock = dynamic(() => import('../components/obratiliVniman
 const Home = () => {
   return (
     <section className='mt-6 overflow-hidden pt-8'>
-
       <div
         className='sd:px-10 xy:px-5'
       >
@@ -30,8 +29,10 @@ const Home = () => {
             </span>
           </h1>
 
-          <div className='flex flex-col md:flex-row md:mt-16'>
-            <div className='flex-shrink-0 sd:pr-8 xyy:pr-0 rounded-md md:order-1 xyy:my-8 sd:my-0'>
+          <div className='flex flex-col sd:flex-row sd:mt-16'>
+            <div
+              className='sd:hidden flex-shrink-0 sd:pr-8 xyy:pr-0 rounded-md sd:order-1 xyy:my-8 sd:my-0'
+            >
               <Image
                 src='/images/main/main.webp'
                 alt='Психолог в Минске Ирзунова Мария'
@@ -41,7 +42,7 @@ const Home = () => {
                 loading="eager"
               />
             </div>
-            <div className='flex-grow md:order-2'>
+            <div className='flex-grow sd:order-2'>
               <p className='leading-6 tracking-wide font-light sd:text-base xyy:text-sm text-justify'>
                 Здравствуйте, я рада представиться вам как одна из немногих сертифицированных клинических психологов, практикующих в Минске и обладающих более чем 8-летним профессиональным стажем. Моя основная цель заключается в оказании вам помощи и поддержки. Мое обширное поле экспертизы включает все аспекты психологических и эмоциональных трудностей, которые вы можете встретить в своей жизни. Я готова помочь вам справиться с психологическим бесплодием, депрессией, паникой, обсессивно-компульсивным расстройством, проблемами в отношениях, связанными с тревогой, физическими и эмоциональными расстройствами, а также с проблемами со сном, стрессом, навязчивыми мыслями, семейными и супружескими конфликтами, социальной тревожностью и посттравматическими расстройствами. Позвольте мне быть рядом с вами и помочь вам на вашем пути к благополучию и психологическому здоровью.
               </p>
@@ -76,7 +77,7 @@ const Home = () => {
       <ContentSection />
       <SectionFormMainPage />
       <a href='tel:80298884002'>
-        <div className='fixed bottom-[100px] right-3 bg-black w-16 h-16 rounded-full flex justify-center items-center'>
+        <div className='z-50 fixed bottom-[100px] right-3 bg-black w-16 h-16 rounded-full flex justify-center items-center'>
           <PhoneOutlined
             className='text-white text-3xl animate-pulse'
           />
@@ -86,4 +87,4 @@ const Home = () => {
     </section>
   )
 }
-export default Home
+export default Home;
