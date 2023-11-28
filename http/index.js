@@ -16,7 +16,6 @@ const authInterceptor = config => {
     return config
 }
 
-
 //_будет отробат перед каждым запросом и подстовлять токен 
 $authHost.interceptors.request.use(authInterceptor)
 

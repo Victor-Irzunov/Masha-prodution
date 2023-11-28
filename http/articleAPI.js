@@ -10,9 +10,7 @@ export const getOneArticle = async ({ id }) => {
 	return data
 }
 export const getAllGroupArticle = async ( group ) => {
-	console.log("🚀 🚀 🚀  _ file: articleAPI.js:13 _ getAllGroupArticle _ group:", group)
 	const { data } = await $host.get('/api/article/group/'+ group)
-	console.log("🚀 🚀 🚀  _ file: articleAPI.js:14 _ getAllGroupArticle _ data:", data)
 	return data
 }
 export const getAllArticle = async () => {

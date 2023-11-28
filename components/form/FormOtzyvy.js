@@ -3,7 +3,7 @@ import { Button, Form, Input, Checkbox, Rate, message } from 'antd'
 import { HeartOutlined } from '@ant-design/icons'
 import { useState } from 'react'
 import { createOtzyvy } from '../../http/otzyvyAPI'
-// import { sendOrderTelegram } from '../../http/telegramAPI'
+import { sendOrderTelegram } from '../../http/telegramAPI'
 const { TextArea } = Input
 export const FormOtzyvy = ({ setAdd }) => {
 	const [isCheck, setIsCheck] = useState(false)
@@ -12,18 +12,29 @@ export const FormOtzyvy = ({ setAdd }) => {
 		console.log('Success:', values)
 
 		const formData = {};
-		formData.name = values.name;
-		formData.vozvrast = values.vozvrast;
-		formData.city = values.city;
+		formData.name = values.name || '';
+		formData.vozvrast = values.vozvrast || '';
+		formData.city = values.city || '';
 		formData.tel = values.tel;
 		formData.otzyv = values.otzyv;
 		formData.rate = values.rate;
-		
+
+
+		let messageForm = `<b>Отзыв с сайта irzunova.by:</b>\n`;
+		messageForm += `<b>Имя: </b> ${values.name}\n`;
+		messageForm += `<b>--------------- </b>\n`;
+		messageForm += `<b>Телефон:</b> ${values.tel}\n`;
+		messageForm += `<b> </b>\n`;
+		messageForm += `<b>Отзыв: ${values.otzyv} </b>\n`;
+		messageForm += `<b>Перейти на сайт: <a href="https://irzunova.by">irzunova.by</a> </b>\n`;
+
+
 		createOtzyvy(formData)
 			.then(data => {
 				if (data) {
 					message.success(data.message)
 					form.resetFields()
+					sendOrderTelegram(messageForm)
 				}
 			})
 	}
@@ -74,6 +85,12 @@ export const FormOtzyvy = ({ setAdd }) => {
 			<Form.Item
 				label="Город"
 				name="city"
+				rules={[
+					{
+						required: true,
+						message: 'Напишите свой город!',
+					},
+				]}
 			>
 				<Input />
 			</Form.Item>
@@ -84,7 +101,7 @@ export const FormOtzyvy = ({ setAdd }) => {
 				rules={[
 					{
 						required: true,
-						message: 'Пожалуйста введите номер телефона!',
+						message: 'Пожалуйста свой введите номер телефона!',
 					},
 				]}
 			>

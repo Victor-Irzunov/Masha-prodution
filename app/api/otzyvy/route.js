@@ -4,13 +4,13 @@ import { NextResponse } from 'next/server';
 const prisma = new PrismaClient();
 
 export async function GET(req, res) {
+	// console.log('-----Запрос на сервере к БД за новыми отзывами' )
 	try {
 		const data = await prisma.otzyvy.findMany({
 			where: {
 				isNew: true,
 			},
 		});
-
 		return NextResponse.json(data);
 	} catch (error) {
 		return new NextResponse("Серверная ошибка Отзывы Get", { status: 500 });
@@ -21,7 +21,7 @@ export async function GET(req, res) {
 export async function POST(req, res) {
 	try {
 		const body = await req.json();
-		console.log("🚀 🚀 🚀  _ file: route.js:24 _ POST _ body:", body)
+		console.log("🚀 🚀 🚀 otzyvy _ POST _ body:", body)
 		const { name, vozvrast, city, tel, otzyv, rate } = body;
 		const data = await prisma.otzyvy.create({
 			data: {

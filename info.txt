@@ -92,3 +92,14 @@ next-env.d.ts
 
 // NOTE: This file should not be edited
 // see https://nextjs.org/docs/basic-features/typescript for more information.
+
+
+
+
+  const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/otzyvy/all`,{ cache: 'no-store' });
+		 
+			  if (!response.ok) {
+				 throw new Error(`HTTP error! Status: ${response.status}`);
+			  }
+			  const data = await response.json();
+			  console.log("🚀 🚀 🚀 ответ! data:", data);

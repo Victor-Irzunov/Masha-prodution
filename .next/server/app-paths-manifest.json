@@ -1,9 +1,10 @@
 {
   "/page": "app/page.js",
-  "/uslugi/page": "app/uslugi/page.js",
-  "/api/zapisi/route": "app/api/zapisi/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/blog/page": "app/blog/page.js",
   "/api/user/route": "app/api/user/route.js",
+  "/api/zapisi/route": "app/api/zapisi/route.js",
   "/api/otzyvy/route": "app/api/otzyvy/route.js",
-  "/uslugi/[link]/page": "app/uslugi/[link]/page.js",
-  "/api/article/group/[group]/route": "app/api/article/group/[group]/route.js"
+  "/zapis-k-psikhologu/page": "app/zapis-k-psikhologu/page.js",
+  "/blog/[link]/[id]/page": "app/blog/[link]/[id]/page.js"
 }

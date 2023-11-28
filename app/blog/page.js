@@ -1,66 +1,49 @@
-"use client"
-import { useEffect, useState, useContext } from 'react'
-import { motion } from "framer-motion"
-import {
-	titleAnimation,
-	titleAnimation2,
-	yCustomAnimation,
-} from '../../constans/animation/AnimationConst'
-import { message, Empty } from 'antd'
+import {Empty } from 'antd'
 import Link from 'next/link'
 import { EyeOutlined, EditOutlined, LikeOutlined, DislikeOutlined } from '@ant-design/icons'
-import { getAllArticle, userViewArticle } from '../../http/articleAPI'
 import moment from 'moment'
-import { MyContext } from '../../contexts/MyContextProvider'
 import Image from 'next/image'
 import { transliterate } from '../../transliterate/transliterate'
 import '../../node_modules/moment/locale/ru'
+export const dynamic = 'force-static';
+export const revalidate = 60;
+import { PrismaClient } from '@prisma/client';
+
+const prisma = new PrismaClient();
+
+async function getData() {
+	try {
+		const data = await prisma.articles.findMany();
+		if (!data || data.length === 0) {
+			throw new Error(`Проблема с получением статей`);
+		}
+		return data
+	} catch (error) {
+		console.error("Ошибки при запросе статей:", error);
+		throw error;
+	}
+}
 moment.locale('ru');
 
-const BlogPage = () => {
-	const [data, setData] = useState([])
-	const { user } = useContext(MyContext)
-
-	useEffect(() => {
-		getAllArticle()
-			.then(data => {
-				console.log("🚀 🚀 🚀 getAllArticle _ data: ", data)
-				if (data) {
-					setData(data)
-				}
-				else message.error(data.message)
-			})
-	}, [])
-
-	const countPlusOne = (id) => {
-		userViewArticle(id)
-			.then(data => {
-				console.log("🚀 🚀 🚀countPlusOne _ data:", data)
-			})
-	}
-
+export default async function BlogPage () {
+	const data = await getData()
 
 	return (
 		<section className='pt-10 pb-30'>
-			<motion.div
-				initial="hidden"
-				whileInView="visible"
+			<div
 				className='sd:px-10 xy:px-5'
 			>
-				<motion.h1
+				<h1
 					className='sd:text-8xl xy:text-4xl text-[#191c1d] font-extrabold uppercase'
-					variants={titleAnimation2}
 				>
 					Статьи
-				</motion.h1>
-				<motion.h2
+				</h1>
+				<h2
 					className='text-white sd:text-6xl xy:text-2xl font-bold sd:mt-20 xy:mt-4'
-					variants={titleAnimation}
 				>
 					психолог Минск
-				</motion.h2>
-			</motion.div>
-
+				</h2>
+			</div>
 			<div className='h-20'></div>
 			{
 				data.length ? data.map(el => {
@@ -83,19 +66,11 @@ const BlogPage = () => {
 									/>
 								</div>
 								<div className='xy:w-8/12 sd:w-full relative'>
-									{
-										user.userData && user.userData.isAdmin ?
-											<div className='absolute top-0 right-0 text-pink-500'>
-												{el.id}
-											</div>
-											:
-											null
-									}
-
+									
 									<h3 className='text-lg'>
 										<Link href={{ pathname: `/blog/${transliterate(el.link.split(' ').join('-'))}/${el.id}` }}
 											className='border-b border-black'
-											onClick={() => countPlusOne(el.id)}
+											// onClick={() => countPlusOne(el.id)}
 										>
 											{el.link}
 										</Link>
@@ -152,9 +127,7 @@ const BlogPage = () => {
 					:
 					<Empty />
 			}
-
 		</section>
 	)
 }
 
-export default BlogPage

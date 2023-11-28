@@ -4,6 +4,7 @@ import { NextResponse } from 'next/server';
 const prisma = new PrismaClient();
 
 export async function GET(req, res) {
+  // console.log('----Запрос на сервере за записями-----' )
   try {
     const data = await prisma.zapisi.findMany();
     if (data.length) {

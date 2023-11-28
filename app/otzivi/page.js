@@ -1,85 +1,72 @@
-"use client"
-import { useEffect, useState } from 'react'
-import { motion } from "framer-motion"
-import { titleAnimation2, titleAnimation, yAnimation } from '../../constans/animation/AnimationConst'
-import { ExclamationCircleOutlined, HeartOutlined } from '@ant-design/icons'
-import { Popover, Rate, Avatar, Button, Empty } from 'antd'
-import avatar from '../../public/images/logo2.webp'
-import { FormOtzyvy } from '../../components/form/FormOtzyvy'
+import { HeartOutlined, UserOutlined } from '@ant-design/icons'
+import { Rate, Avatar, Empty } from 'antd'
 import moment from 'moment'
-import { getAllOtzyvy } from '../../http/otzyvyAPI'
-import Image from 'next/image'
+import AddOtzyvyBtn from '../../components/addOtzyvy/AddOtzyvyBtn'
+import { PrismaClient } from '@prisma/client';
+export const dynamic = 'force-static';
+export const revalidate = 60;
 
-const content = (
-	<div>
-		<p>Отзыв будет опубликован только если это отзыв клиента и после проверки администратора.</p>
-	</div>
-)
+const prisma = new PrismaClient();
 
-const OtzyvyPage = () => {
-	const [data, setData] = useState([])
-	const [add, setAdd] = useState(false)
+async function getData() {
+	console.log('---------запрос----' )
+	try {
+		// const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/otzyvy/all`)
 
+		// if (!res.ok) {
+		// 	throw new Error(`HTTP error! Ошбка !-1`);
+		// }
+		const data = await prisma.otzyvy.findMany();
+		if (!data || data.length === 0) {
+			throw new Error(`Проблема с получением отзывов`);
+		}
+		return data
+	} catch (error) {
+		console.error("Ошибки при запросе:", error);
+		throw error;
+	}
+}
 
-	useEffect(() => {
-		getAllOtzyvy()
-			.then(data => {
-				console.log("🚀 🚀 🚀  _ file: page.js:28 _ useEffect _ data:", data)
-				setData(data)
-			})
-	}, [])
+export default async function OtzyvyPage() {
+	const data = await getData()
 
 	const fu = (n, arr) => n + " " + arr[(n % 100 > 4 && n % 100 < 20) ? 2 : [2, 0, 1, 1, 1, 2][(n % 10 < 5) ? n % 10 : 5]]
 	const arr1 = ['год', 'года', 'лет']
 
 	return (
 		<section className='pt-10 pb-20'>
-			<motion.div
-				initial="hidden"
-				whileInView="visible"
+			<div
 				className='sd:px-10 xy:px-5 sd:mb-40 xy:mb-10'
 			>
-				<motion.h1
+				<h1
 					className='sd:text-8xl xy:text-4xl text-[#191c1d] font-extrabold uppercase'
-					variants={titleAnimation2}
 				>
 					Отзывы психолога в Минске
-				</motion.h1>
-				<motion.h2
+				</h1>
+				<h2
 					className='text-white sd:text-4xl xy:text-2xl font-bold mt-10'
-					variants={titleAnimation}
 				>
 					Ирзуновой Марии
-				</motion.h2>
-			</motion.div>
-
-
+				</h2>
+			</div>
 			{data.length ? data.map(el => {
 				if (el.isPublication) {
 					return (
-						<motion.div
+						<div
 							className='sd:px-10 xy:px-5 pt-10 bg-white overflow-hidden'
-							initial="hidden"
-							whileInView="visible"
 							key={el.id}
 						>
-							<motion.div
+							<div
 								className='border-b pb-10 overflow-hidden'
-								variants={yAnimation}
 							>
 								<div className='flex'>
 									<div className=''>
-										{/* <Avatar
-											style={{
-												backgroundColor: '#65a30d',
-											 }}
-										>
-											{el.name[0]}
-										</Avatar> */}
 										<Avatar
-											 src="https://joesch.moe/api/v1/female/random"
+											style={{
+												backgroundColor: '#87d068',
+											}}
+											icon={<UserOutlined />}
 										/>
-											
 									</div>
 									<div className='ml-3 w-1/2'>
 										<div className='flex justify-start items-center'>
@@ -108,7 +95,6 @@ const OtzyvyPage = () => {
 										{el.otzyv}
 									</p>
 								</div>
-
 								<div className='pl-10 mt-6'>
 									<div className='flex'>
 										<Avatar src='/images/logo2.webp' size='small' />
@@ -121,41 +107,19 @@ const OtzyvyPage = () => {
 										<p className='text-xs text-gray-500 inline'>{el.response}</p>
 									</div>
 								</div>
-							</motion.div>
-
-						</motion.div>
+							</div>
+						</div>
 					)
 				}
 			})
 				:
-				<Empty/>
-		}
-
-			<div className='mt-14 px-10'>
-				<div
-					style={{
-						marginBottom: 16,
-					}}
-					className='flex items-center justify-end'
-				>
-
-					<Popover content={content} title={<div className='text-center'><ExclamationCircleOutlined className='text-2xl text-green-600 ml-6' /></div>} trigger="click">
-						<Image src='/images/Info.svg' className='mr-3' alt='Информация' width={30} height={30} />
-					</Popover>
-					<Button onClick={() => setAdd(true)}>Добавить отзыв</Button>
-				</div>
-			</div>
-
-			{
-
-				add &&
-				<div className='px-10'>
-					<FormOtzyvy setAdd={setAdd} />
-				</div>
+				<Empty />
 			}
 
-		</section>
+			<AddOtzyvyBtn />
+
+		</section >
 	)
 }
 
-export default OtzyvyPage
+

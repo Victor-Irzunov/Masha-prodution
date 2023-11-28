@@ -5,6 +5,7 @@ import { createDataZapisi } from '../../../http/dataAPI'
 import { MyContext } from '../../../contexts/MyContextProvider'
 import ModalComp from '../../modal/ModalComp'
 import moment from 'moment'
+import { sendOrderTelegram } from '../../../http/telegramAPI'
 
 const FormZapisUser = forwardRef(({ value, setOpen, setValue }, ref) => {
 	const [form] = Form.useForm()
@@ -19,7 +20,7 @@ const FormZapisUser = forwardRef(({ value, setOpen, setValue }, ref) => {
 	const onFinish = (values) => {
 		console.log('++Success:', values)
 		setDataModal({ ...dataModal, name: values.name, start: value, type: values.type })
-		
+
 		const formData = {};
 		formData.zapros = values.zapros;
 		formData.start = value;
@@ -28,10 +29,24 @@ const FormZapisUser = forwardRef(({ value, setOpen, setValue }, ref) => {
 		formData.title = values.name;
 		formData.type = values.type;
 
+
+		let messageForm = `<b>Запись с сайта irzunova.by:</b>\n`;
+		messageForm += `<b>Имя: </b> ${values.name}\n`;
+		messageForm += `<b>--------------- </b>\n`;
+		messageForm += `<b>Телефон:</b> ${values.tel}\n`;
+		messageForm += `<b> </b>\n`;
+		messageForm += `<b>Дата с:</b> ${value}\n`;
+		messageForm += `<b> </b>\n`;
+		messageForm += `<b>Дата по:</b> ${moment(value).add(120, 'm').toDate()}\n`;
+		messageForm += `<b> </b>\n`;
+		messageForm += `<b>Запрос: ${values.zapros} </b>\n`;
+		messageForm += `<b>Перейти на сайт: <a href="https://irzunova.by">irzunova.by</a> </b>\n`;
+
 		createDataZapisi(formData).then(data => {
 			if (data) {
 				dataApp.setResDataZapisi(data)
 				message.success('Вы записаны')
+				sendOrderTelegram(messageForm)
 
 				setTimeout(() => {
 					showModal()

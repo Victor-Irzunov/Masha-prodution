@@ -48,7 +48,7 @@ const ModalComp = (
 				</div>
 			}
 			{
-				formQuestins && <FormQuestion />
+				formQuestins && <FormQuestion handleCancel={handleCancel} />
 			}
 		</Modal>
 	)

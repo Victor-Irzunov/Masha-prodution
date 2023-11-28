@@ -8,9 +8,9 @@ export const getAllOtzyvy = async () => {
 	const { data } = await $host.get('/api/otzyvy/all')
 	return data
 }
+
 export const getNewOtzyvy = async () => {
 	const { data } = await $authHost.get('/api/otzyvy')
-	console.log("🚀 🚀 🚀  _ file: otzyvyAPI.js:13 _ getNewOtzyvy _ data:", data)
 	return data
 }
 export const changeOtzyvy = async (obj) => {

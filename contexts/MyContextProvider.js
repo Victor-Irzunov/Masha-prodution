@@ -5,7 +5,6 @@ import DataStore from '../store/DataStore';
 import { dataUser } from '../http/userAPI';
 import { getAllZapisi } from '../http/dataAPI';
 import { getNewOtzyvy } from '../http/otzyvyAPI';
-// import { message } from 'antd';
 const MyContext = createContext();
 
 const MyContextProvider = ({ children }) => {
@@ -28,13 +27,14 @@ const MyContextProvider = ({ children }) => {
         }
       })
       .catch(data => {
-        console.log('"🚀 🚀 🚀dataUser err:', data)
+        console.log('🚀 🚀 🚀dataUser err:', data)
       })
   }, [user])
 
   useEffect(() => {
     getAllZapisi()
       .then(data => {
+        // console.log("🚀 MyContextProvider getAllZapisi data:", data)
         if (data.length) {
           dataApp.setDataZapisi(data)
         } else {
@@ -48,13 +48,13 @@ const MyContextProvider = ({ children }) => {
   useEffect(() => {
     getNewOtzyvy()
       .then(data => {
+        // console.log("🚀 MyContextProvider getNewOtzyvy data:", data)
         dataApp.setNewOtzyvy(data)
         if (data.length) {
           setNewOtzyvy(true)
         }
       })
   }, [user.userData])
-
 
   return (
     <MyContext.Provider value={{ state, updateState, user, dataApp, newOtzyvy }}>

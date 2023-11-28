@@ -4,9 +4,6 @@ import { NextResponse } from 'next/server';
 const prisma = new PrismaClient();
 
 export async function GET(req, { params: { group } }) {
-  console.log('-----------------')
-  console.log('-----------------')
-  console.log('-----------------')
   try {
 
     const data = await prisma.articles.findMany({

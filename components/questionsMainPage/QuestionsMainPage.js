@@ -4,10 +4,10 @@ import { textCollapse } from '../../constans/Constans'
 import { motion } from "framer-motion"
 import PopoverInfo from '../popoverInfo/PopoverInfo'
 import { useScreens } from '../../constans/constScreens'
-import { Link as LinkScroll } from 'react-scroll'
+// import { Link as LinkScroll } from 'react-scroll'
 import ModalComp from '../modal/ModalComp'
 import { useState } from 'react'
-const { Panel } = Collapse;
+// const { Panel } = Collapse;
 
 const QuestionsMainPage = () => {
 	const screens = useScreens()
@@ -41,28 +41,14 @@ const QuestionsMainPage = () => {
 					className=''
 					variants={blockAnimation}
 				>
-					<h3 className='sd:text-6xl xy:text-2xl font-extrabold'>
+					<h3 className='sd:text-6xl xy:text-2xl font-extrabold mb-5'>
 						Часто задаваемые вопросы
 					</h3>
 					<Collapse
 						ghost
 						items={textCollapse}
 					/>
-					{/* {textCollapse.map(el => {
-						return (
-							<Panel
-								header={el.title}
-								key={el.id}
-								showArrow={false}
-								className='sd:text-xl xy:text-base font-extralight sd:pl-7 xy:pl-2'
-							>
-								<p>
-									{el.content}
-								</p>
-							</Panel>
-						)
-					})}
-				</Collapse> */}
+					
 
 					<div className='flex justify-start items-center pl-10 mt-10'>
 						<Button
