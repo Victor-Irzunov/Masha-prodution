@@ -102,14 +102,16 @@ export const FooterComp = () => {
               <p>mishel1406@mail.ru</p>
               <a href='tel:80298884002'>+375 29 888-40-02</a>
             </div>
-            <Button
-              type='primary'
-              shape="round"
-              size={screens.md ? 'large' : 'middle'}
-              className={screens.md ? 'mt-0' : 'mt-7'}
-            >
-              кейсы в instagram
-            </Button>
+            <a href='https://www.instagram.com/psy_irzunova/' target='_blank'>
+              <Button
+                type='primary'
+                shape="round"
+                size={screens.md ? 'large' : 'middle'}
+                className={screens.md ? 'mt-0' : 'mt-7'}
+              >
+                instagram
+              </Button>
+            </a>
           </motion.div>
         </motion.div>
 

@@ -1,9 +1,15 @@
 {
   "pages": {
-    "/blog/[link]/[id]/layout": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/blog/[link]/[id]/layout.js"
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
+    ],
+    "/stoimost-psihologa/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/stoimost-psihologa/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -11,36 +17,10 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/blog/layout": [
+    "/psiholog-mariya-irzunova/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/blog/layout.js"
-    ],
-    "/blog/[link]/[id]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/blog/[link]/[id]/page.js"
-    ],
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
-    ],
-    "/blog/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/blog/page.js"
-    ],
-    "/zapis-k-psikhologu/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/zapis-k-psikhologu/page.js"
-    ],
-    "/zapis-k-psikhologu/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/zapis-k-psikhologu/layout.js"
+      "static/chunks/app/psiholog-mariya-irzunova/page.js"
     ]
   }
 }

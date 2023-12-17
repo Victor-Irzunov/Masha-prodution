@@ -11,7 +11,7 @@ const BtnMenuNavigate = dynamic(() => import('../components/btnMenuNavigateMainP
 const QuestionsMainPage = dynamic(() => import('../components/questionsMainPage/QuestionsMainPage'));
 const TntVideoBlock = dynamic(() => import('../components/tnt/TntVideoBlock'));
 const SectionMainPage = dynamic(() => import('../components/sectionMainPage/SectionMainPage'));
-const FotoInfoMainPage = dynamic(() => import('../components/fotoInfoMainPage/FotoInfoMainPage'));
+// const FotoInfoMainPage = dynamic(() => import('../components/fotoInfoMainPage/FotoInfoMainPage'));
 const ObratiliVnimanieBlock = dynamic(() => import('../components/obratiliVnimanieMainPage/ObratiliVnimanieBlock'));
 
 const Home = () => {
@@ -25,9 +25,13 @@ const Home = () => {
             className='text-[#191c1d] sd:text-8xl xy:text-4xl font-semibold'>
             Психолог
             <span className='text-white'>
-              {' '} Минск
+              {' '}в Минске
             </span>
           </h1>
+
+          <h2 className='mt-5 sd:text-3xl xyy:text-xl'>
+            Ирзунова Мария
+          </h2>
 
           <div className='flex flex-col sd:flex-row sd:mt-16'>
             <div
@@ -44,7 +48,7 @@ const Home = () => {
             </div>
             <div className='flex-grow sd:order-2'>
               <p className='leading-6 tracking-wide font-light sd:text-base xyy:text-sm text-justify'>
-                Здравствуйте, я рада представиться вам как одна из немногих сертифицированных клинических Приветствую вас! Меня зовут Мария Ирзунова, клинический и перинатальный психолог с медицинским образованием. Я сертифицированный специалист с более чем 9-летним опытом работы, являюсь Членом Международной Ассоциации Психологов и Членом Российской Ассоциации Психологов. Работая в сети клиник «Evaclinic» репродуктивного здоровья и ВРТ, а также проводя частные консультации в г.Минске и онлайн по всему миру, я готова помочь вам справиться с широким спектром психологических трудностей.
+              Здравствуйте, меня зовут Мария Ирзунова. Я клинический и перинатальный психолог с медицинским образованием, Член Международной Ассоциации Психологов, Член Российской Ассоциации Психологов, работаю в сети клиник «Evaclinic” репродуктивного здоровья и ВРТ, провожу частные консультации в личном кабинете в г.Минске и по всему Миру онлайн более 9 лет, пишу статьи для крупных изданий, автор оффлайн курса для беременных, участвую в волонтерских проектах.
               </p>
               <p className='mt-6 mb-2'>
                 Мои принципы в работе:
@@ -106,7 +110,7 @@ const Home = () => {
       <SectionMainPage />
       <Divider />
       <QuestionsMainPage />
-      <FotoInfoMainPage />
+      {/* <FotoInfoMainPage /> */}
       <TntVideoBlock />
       <ObratiliVnimanieBlock />
       <OnlineMainPageSection />

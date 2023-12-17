@@ -1,16 +1,18 @@
+import { Image } from "antd"
+
 export const metadata = {
 	title: 'Психолог Минск цена | Ирзунова Мария',
 	description: 'Стоимость консультации психолога в Минске. ☝ Лучший частный психолог принимает в Минске. Узнать стоимость услуги и записаться ✍️ на консультацию.',
 	alternates: {
 		canonical: 'https://irzunova.by/stoimost-psihologa'
-  },
-  og: {
-    title: 'Психолог Минск цена | Ирзунова Мария',
-    description: 'Стоимость консультации психолога в Минске. ☝ Лучший частный психолог принимает в Минске. Узнать стоимость услуги и записаться ✍️ на консультацию.',
-    type: 'website',
-    url: 'https://irzunova.by/stoimost-psihologa',
-    image: '/images/main/main.webp',
-  },
+	},
+	og: {
+		title: 'Психолог Минск цена | Ирзунова Мария',
+		description: 'Стоимость консультации психолога в Минске. ☝ Лучший частный психолог принимает в Минске. Узнать стоимость услуги и записаться ✍️ на консультацию.',
+		type: 'website',
+		url: 'https://irzunova.by/stoimost-psihologa',
+		image: '/images/main/main.webp',
+	},
 }
 
 
@@ -58,11 +60,11 @@ const PricePage = () => {
 							<p className='uppercase text-black sd:text-[12px] xy:text-[8px] mb-0 font-semibold'>консультация</p>
 						</div>
 					</div>
-					<div className='w-1/4 h-20 shadow-lg bg-lime-600 flex justify-center items-center m-0.5'>
-						<p className='text-white text-[13px] mb-0'>96,00 руб</p>
+					<div className='w-1/4 h-20 shadow-lg bg-lime-600 text-center flex flex-col justify-center items-center m-0.5 font-semibold'>
+						<p className='text-white text-[13px] mb-0'>95,00 руб</p>
 					</div>
 					<div className='w-1/4 h-20 shadow-lg bg-white flex justify-center items-center m-0.5'>
-						<p className='text-black text-[13px] mb-0'>1 час</p>
+						<p className='text-black text-[13px] mb-0'>60 мин.</p>
 					</div>
 					<div className='w-1/4 h-20 shadow-lg bg-white flex justify-center items-center m-0.5'>
 						<div className='text-center'>
@@ -72,7 +74,7 @@ const PricePage = () => {
 					</div>
 				</div>
 
-				<div className='flex justify-between items-center'>
+				{/* <div className='flex justify-between items-center'>
 					<div className='w-1/4 h-20 shadow-lg bg-white flex justify-center items-center m-0.5'>
 						<div className='text-center sd:text-[12px] xy:text-[8px]'>
 							<p className='uppercase text-black mb-0 font-semibold'>консультация</p>
@@ -92,7 +94,7 @@ const PricePage = () => {
 							<p className='text-black sd:text-[13px] xy:text-[11px] mb-0'>в кабинете</p>
 						</div>
 					</div>
-				</div>
+				</div> */}
 
 				<div className='flex justify-between items-center'>
 					<div className='w-1/4 h-20 shadow-lg bg-white flex justify-center items-center m-0.5'>
@@ -102,10 +104,10 @@ const PricePage = () => {
 						</div>
 					</div>
 					<div className='w-1/4 h-20 shadow-lg bg-lime-600 flex justify-center items-center m-0.5'>
-						<p className='text-white text-[13px] mb-0 font-semibold'>130,00 руб</p>
+						<p className='text-white text-[13px] mb-0 font-semibold'>120,00 руб</p>
 					</div>
 					<div className='w-1/4 h-20 shadow-lg bg-white flex justify-center items-center m-0.5'>
-						<p className='text-black text-[13px] mb-0 '>1 - 2 часа</p>
+						<p className='text-black text-[13px] mb-0 '>90 мин.</p>
 					</div>
 					<div className='w-1/4 h-20 shadow-lg bg-white flex justify-center items-center m-0.5'>
 						<div className='text-center'>
@@ -119,13 +121,14 @@ const PricePage = () => {
 						<div className='text-center sd:text-[12px] xy:text-[8px]'>
 							<p className='uppercase text-black mb-0 font-semibold'>консультация</p>
 							<p className='uppercase text-black mb-0 font-semibold'>с подростком</p>
+							<p className='uppercase text-black mb-0 font-semibold'>15-19 лет</p>
 						</div>
 					</div>
 					<div className='w-1/4 h-20 shadow-lg bg-lime-600 flex justify-center items-center m-0.5'>
-						<p className='text-white text-[13px] mb-0'>90,00 руб</p>
+						<p className='text-white text-[13px] mb-0'>85,00 руб</p>
 					</div>
 					<div className='w-1/4 h-20 shadow-lg bg-white flex justify-center items-center m-0.5'>
-						<p className='text-black text-[13px] mb-0'>1 час</p>
+						<p className='text-black text-[13px] mb-0'>60 мин.</p>
 					</div>
 					<div className='w-1/4 h-20 shadow-lg bg-white flex justify-center items-center m-0.5'>
 						<div className='text-center sd:text-[13px] xy:text-[11px]'>
@@ -137,8 +140,14 @@ const PricePage = () => {
 			</div>
 
 			<div className='mt-10 text-gray-600 font-light leading-5 sd:px-10 xy:px-5 text-sm'>
-				<p>
-					Оплатить консультацию можно наличными или сделать перевод с банковской карты – то, что удобно вам. Помните, что для достижения хороших результатов, частота встреч играет большую роль. Поэтому мы рекомендуем видеться хотя бы раз в неделю.
+				<div className='flex'>
+					<Image src="/images/info.svg" width={30} height={30} className="animate-bounce" alt="Информация для клиента" />
+					<p className="font-semibold ml-3">
+					На второй индивидуальной консультации и последующих сессиях стоимость составляет <span className="bg-lime-600 p-1 text-white leading-8">85,00 рублей</span>.
+					</p>
+				</div>
+				<p className="mt-8">
+					Оплатить консультацию можно наличными или сделать перевод с банковской карты или через ЕРИП.
 				</p>
 			</div>
 
@@ -177,7 +186,7 @@ const PricePage = () => {
 							</p>
 
 						</div>
-						<div className='w-[60%] pt-10'/>
+						<div className='w-[60%] pt-10' />
 					</div>
 				</div>
 			</section>

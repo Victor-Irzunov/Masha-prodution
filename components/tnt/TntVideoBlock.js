@@ -43,14 +43,14 @@ const TntVideoBlock = () => {
 		<motion.section
 			initial="hidden"
 			whileInView="visible"
-			className='bg-white sd:px-10 xy:px-5 py-20'
+			className='sd:px-10 xy:px-5 py-20'
 			id="tnt"
 		>
 			<motion.div
 				variants={blockAnimation}
 			>
 				<div className=''>
-					<h3 className='sd:text-8xl xy:text-4xl font-extrabold mb-6'>Гость на <span className='text-[#cdcecf]'>ТНТ</span></h3>
+					<h3 className='sd:text-8xl xy:text-4xl font-extrabold mb-6'>Гость на <span className='text-white'>ТНТ</span></h3>
 				</div>
 
 				{/* <div className='relative'>
