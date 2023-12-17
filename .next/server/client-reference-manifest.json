@@ -192,14 +192,6 @@
         "async": false
       }
     },
-    "(app-client)/./node_modules/antd/lib/image/index.js": {
-      "*": {
-        "id": "(sc_client)/./node_modules/antd/lib/image/index.js",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
     "(app-client)/./components/footer/FooterComp.js": {
       "*": {
         "id": "(sc_client)/./components/footer/FooterComp.js",
@@ -224,9 +216,9 @@
         "async": false
       }
     },
-    "(app-client)/./public/images/about/1.webp": {
+    "(app-client)/./public/images/Info.svg": {
       "*": {
-        "id": "(sc_client)/./public/images/about/1.webp",
+        "id": "(sc_client)/./public/images/Info.svg",
         "name": "*",
         "chunks": [],
         "async": false
@@ -359,7 +351,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/image-component.js",
       "name": "*",
       "chunks": [
-        "app/psiholog-mariya-irzunova/page:static/chunks/app/psiholog-mariya-irzunova/page.js"
+        "app/stoimost-psihologa/page:static/chunks/app/stoimost-psihologa/page.js"
       ],
       "async": false
     },
@@ -367,7 +359,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/image-component.js",
       "name": "*",
       "chunks": [
-        "app/psiholog-mariya-irzunova/page:static/chunks/app/psiholog-mariya-irzunova/page.js"
+        "app/stoimost-psihologa/page:static/chunks/app/stoimost-psihologa/page.js"
       ],
       "async": false
     },
@@ -491,14 +483,6 @@
       ],
       "async": false
     },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/node_modules/antd/lib/image/index.js": {
-      "id": "(app-client)/./node_modules/antd/lib/image/index.js",
-      "name": "*",
-      "chunks": [
-        "app/stoimost-psihologa/page:static/chunks/app/stoimost-psihologa/page.js"
-      ],
-      "async": false
-    },
     "/Users/viktor/Programing/WORK/Masha_Next_production/components/footer/FooterComp.js": {
       "id": "(app-client)/./components/footer/FooterComp.js",
       "name": "*",
@@ -531,11 +515,11 @@
       ],
       "async": false
     },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/public/images/about/1.webp": {
-      "id": "(app-client)/./public/images/about/1.webp",
+    "/Users/viktor/Programing/WORK/Masha_Next_production/public/images/Info.svg": {
+      "id": "(app-client)/./public/images/Info.svg",
       "name": "*",
       "chunks": [
-        "app/psiholog-mariya-irzunova/page:static/chunks/app/psiholog-mariya-irzunova/page.js"
+        "app/stoimost-psihologa/page:static/chunks/app/stoimost-psihologa/page.js"
       ],
       "async": false
     }
@@ -544,10 +528,9 @@
     "/Users/viktor/Programing/WORK/Masha_Next_production/app/page": [
       "static/css/app/page.css"
     ],
-    "/Users/viktor/Programing/WORK/Masha_Next_production/app/stoimost-psihologa/page": [],
     "/Users/viktor/Programing/WORK/Masha_Next_production/app/layout": [
       "static/css/app/layout.css"
     ],
-    "/Users/viktor/Programing/WORK/Masha_Next_production/app/psiholog-mariya-irzunova/page": []
+    "/Users/viktor/Programing/WORK/Masha_Next_production/app/stoimost-psihologa/page": []
   }
 }

@@ -6,21 +6,16 @@
       "static/css/app/page.css",
       "static/chunks/app/page.js"
     ],
-    "/stoimost-psihologa/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/stoimost-psihologa/page.js"
-    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/psiholog-mariya-irzunova/page": [
+    "/stoimost-psihologa/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/psiholog-mariya-irzunova/page.js"
+      "static/chunks/app/stoimost-psihologa/page.js"
     ]
   }
 }

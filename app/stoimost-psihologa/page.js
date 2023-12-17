@@ -1,4 +1,5 @@
-import { Image } from "antd"
+import Image from "next/image"
+import info from '../../public/images/Info.svg'
 
 export const metadata = {
 	title: 'Психолог Минск цена | Ирзунова Мария',
@@ -141,7 +142,7 @@ const PricePage = () => {
 
 			<div className='mt-10 text-gray-600 font-light leading-5 sd:px-10 xy:px-5 text-sm'>
 				<div className='flex'>
-					<Image src="/images/info.svg" width={30} height={30} className="animate-bounce" alt="Информация для клиента" />
+					<Image src={info} width={30} height={30} className="animate-bounce" alt="Информация для клиента" />
 					<p className="font-semibold ml-3">
 					На второй индивидуальной консультации и последующих сессиях стоимость составляет <span className="bg-lime-600 p-1 text-white leading-8">85,00 рублей</span>.
 					</p>
