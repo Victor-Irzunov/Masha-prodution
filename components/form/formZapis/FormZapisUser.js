@@ -185,8 +185,8 @@ const FormZapisUser = forwardRef(({ value, setOpen, setValue }, ref) => {
 
 				<div className='mb-10'>
 					<p className='mb-0'>{`Запись на: ${value ? value.toLocaleDateString("ru-RU") : ''} в ${value ? value.toLocaleTimeString("ru-RU") : ''}`}</p>
-					<p className='mb-0'>Стоимость консультации: {valueSelect === 'семейная' ? '120,00 руб' : '96,00 руб'}</p>
-					<p className='text-xs'>Продолжительность консультации: {valueSelect === 'семейная' ? '1 час 30 минут' : '1 час'}</p>
+					<p className='mb-0'>Стоимость консультации: {valueSelect === 'семейная' ? '120,00 руб' : '95,00 руб'}</p>
+					<p className='text-xs'>Продолжительность консультации: {valueSelect === 'семейная' ? '90 мин' : '60 мин'}</p>
 
 				</div>
 

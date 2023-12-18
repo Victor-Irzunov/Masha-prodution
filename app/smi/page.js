@@ -49,7 +49,7 @@ const SMIComp = () => {
 										height={96}
 										src={el.img}
 										alt={`Публикация Психолога Ирзуновой на ${el.publik}`}
-										className='rounded-full shadow-2xl'
+										className='rounded-full shadow-2xl bg-white'
 									/>
 								</div>
 								<div className='ml-5 w-4/5'>

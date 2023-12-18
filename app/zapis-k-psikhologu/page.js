@@ -14,6 +14,7 @@ import { message, Tour, Button, Divider, Empty } from 'antd'
 import { observer } from "mobx-react-lite"
 import { useScreens } from '../../constans/constScreens'
 import { MyContext } from '../../contexts/MyContextProvider'
+import SocialComp from '../../public/images/socialicon/SocialIcon'
 
 
 const ZapisNaPriyomPage = observer(() => {
@@ -46,11 +47,11 @@ const ZapisNaPriyomPage = observer(() => {
 		const currentDate = new Date();
 		const currentDatePlusDays = new Date(currentDate.setDate(currentDate.getDate() + id));
 		return {
-		  id,
-		  startTime: new Date(currentDatePlusDays.setHours(14, 0, 0, 0)),
-		  endTime: new Date(currentDatePlusDays.setHours(22, 0, 0, 0)),
+			id,
+			startTime: new Date(currentDatePlusDays.setHours(14, 0, 0, 0)),
+			endTime: new Date(currentDatePlusDays.setHours(22, 0, 0, 0)),
 		};
-	 });
+	});
 
 
 
@@ -141,6 +142,14 @@ const ZapisNaPriyomPage = observer(() => {
 						format_selectedDateDayTitleFormatString="d LLL, cccc"
 					// startTimeListStyle='scroll-list'
 					/>
+				</div>
+
+				<div className='mt-12 text-center'>
+					<p className="mb-6">
+						Если вы не найдете удобные для вас дату и время, напишите мне в любой из предложенных ниже мессенджеров.
+					</p>
+
+					<SocialComp isActive />
 				</div>
 
 				<div className='mt-10' ref={ref2}>
