@@ -40,6 +40,46 @@
         "async": false
       }
     },
+    "(app-client)/./components/footer/FooterComp.js": {
+      "*": {
+        "id": "(sc_client)/./components/footer/FooterComp.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./components/navBarMenu/NavBarMenu.js": {
+      "*": {
+        "id": "(sc_client)/./components/navBarMenu/NavBarMenu.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./contexts/MyContextProvider.js": {
+      "*": {
+        "id": "(sc_client)/./contexts/MyContextProvider.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/image-component.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/image-component.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./public/images/about/1.webp": {
+      "*": {
+        "id": "(sc_client)/./public/images/about/1.webp",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
     "(app-client)/./node_modules/antd/lib/button/index.js": {
       "*": {
         "id": "(sc_client)/./node_modules/antd/lib/button/index.js",
@@ -67,14 +107,6 @@
     "(app-client)/./node_modules/next/dist/client/link.js": {
       "*": {
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./node_modules/next/dist/client/image-component.js": {
-      "*": {
-        "id": "(sc_client)/./node_modules/next/dist/client/image-component.js",
         "name": "*",
         "chunks": [],
         "async": false
@@ -192,33 +224,17 @@
         "async": false
       }
     },
-    "(app-client)/./components/footer/FooterComp.js": {
+    "(app-client)/./app/admin/page.js": {
       "*": {
-        "id": "(sc_client)/./components/footer/FooterComp.js",
+        "id": "(sc_client)/./app/admin/page.js",
         "name": "*",
         "chunks": [],
         "async": false
       }
     },
-    "(app-client)/./components/navBarMenu/NavBarMenu.js": {
+    "(app-client)/./app/zapis-k-psikhologu/page.js": {
       "*": {
-        "id": "(sc_client)/./components/navBarMenu/NavBarMenu.js",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./contexts/MyContextProvider.js": {
-      "*": {
-        "id": "(sc_client)/./contexts/MyContextProvider.js",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./public/images/Info.svg": {
-      "*": {
-        "id": "(sc_client)/./public/images/Info.svg",
+        "id": "(sc_client)/./app/zapis-k-psikhologu/page.js",
         "name": "*",
         "chunks": [],
         "async": false
@@ -307,6 +323,62 @@
       ],
       "async": false
     },
+    "/Users/viktor/Programing/WORK/Masha_Next_production/components/footer/FooterComp.js": {
+      "id": "(app-client)/./components/footer/FooterComp.js",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/viktor/Programing/WORK/Masha_Next_production/components/navBarMenu/NavBarMenu.js": {
+      "id": "(app-client)/./components/navBarMenu/NavBarMenu.js",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/viktor/Programing/WORK/Masha_Next_production/contexts/MyContextProvider.js": {
+      "id": "(app-client)/./contexts/MyContextProvider.js",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/viktor/Programing/WORK/Masha_Next_production/app/globals.css": {
+      "id": "(app-client)/./app/globals.css",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/viktor/Programing/WORK/Masha_Next_production/node_modules/next/dist/client/image-component.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/image-component.js",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/viktor/Programing/WORK/Masha_Next_production/node_modules/next/dist/esm/client/image-component.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/image-component.js",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/viktor/Programing/WORK/Masha_Next_production/public/images/about/1.webp": {
+      "id": "(app-client)/./public/images/about/1.webp",
+      "name": "*",
+      "chunks": [
+        "app/psiholog-mariya-irzunova/page:static/chunks/app/psiholog-mariya-irzunova/page.js"
+      ],
+      "async": false
+    },
     "/Users/viktor/Programing/WORK/Masha_Next_production/node_modules/antd/lib/button/index.js": {
       "id": "(app-client)/./node_modules/antd/lib/button/index.js",
       "name": "*",
@@ -344,22 +416,6 @@
       "name": "*",
       "chunks": [
         "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/node_modules/next/dist/client/image-component.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/image-component.js",
-      "name": "*",
-      "chunks": [
-        "app/stoimost-psihologa/page:static/chunks/app/stoimost-psihologa/page.js"
-      ],
-      "async": false
-    },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/node_modules/next/dist/esm/client/image-component.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/image-component.js",
-      "name": "*",
-      "chunks": [
-        "app/stoimost-psihologa/page:static/chunks/app/stoimost-psihologa/page.js"
       ],
       "async": false
     },
@@ -483,54 +539,36 @@
       ],
       "async": false
     },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/components/footer/FooterComp.js": {
-      "id": "(app-client)/./components/footer/FooterComp.js",
+    "/Users/viktor/Programing/WORK/Masha_Next_production/app/admin/page.js": {
+      "id": "(app-client)/./app/admin/page.js",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/admin/page:static/chunks/app/admin/page.js"
       ],
       "async": false
     },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/components/navBarMenu/NavBarMenu.js": {
-      "id": "(app-client)/./components/navBarMenu/NavBarMenu.js",
+    "/Users/viktor/Programing/WORK/Masha_Next_production/app/zapis-k-psikhologu/page.js": {
+      "id": "(app-client)/./app/zapis-k-psikhologu/page.js",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/contexts/MyContextProvider.js": {
-      "id": "(app-client)/./contexts/MyContextProvider.js",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/app/globals.css": {
-      "id": "(app-client)/./app/globals.css",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/public/images/Info.svg": {
-      "id": "(app-client)/./public/images/Info.svg",
-      "name": "*",
-      "chunks": [
-        "app/stoimost-psihologa/page:static/chunks/app/stoimost-psihologa/page.js"
+        "app/zapis-k-psikhologu/page:static/chunks/app/zapis-k-psikhologu/page.js"
       ],
       "async": false
     }
   },
   "entryCSSFiles": {
-    "/Users/viktor/Programing/WORK/Masha_Next_production/app/page": [
-      "static/css/app/page.css"
-    ],
     "/Users/viktor/Programing/WORK/Masha_Next_production/app/layout": [
       "static/css/app/layout.css"
     ],
-    "/Users/viktor/Programing/WORK/Masha_Next_production/app/stoimost-psihologa/page": []
+    "/Users/viktor/Programing/WORK/Masha_Next_production/app/psiholog-mariya-irzunova/page": [],
+    "/Users/viktor/Programing/WORK/Masha_Next_production/app/page": [
+      "static/css/app/page.css"
+    ],
+    "/Users/viktor/Programing/WORK/Masha_Next_production/app/admin/layout": [],
+    "/Users/viktor/Programing/WORK/Masha_Next_production/app/admin/page": [
+      "static/css/app/admin/page.css"
+    ],
+    "/Users/viktor/Programing/WORK/Masha_Next_production/app/zapis-k-psikhologu/layout": [],
+    "/Users/viktor/Programing/WORK/Masha_Next_production/app/zapis-k-psikhologu/page": []
   }
 }

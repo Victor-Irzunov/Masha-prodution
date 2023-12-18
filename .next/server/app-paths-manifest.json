@@ -1,6 +1,8 @@
 {
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/api/zapisi/route": "app/api/zapisi/route.js",
+  "/page": "app/page.js",
+  "/psiholog-mariya-irzunova/page": "app/psiholog-mariya-irzunova/page.js",
+  "/zapis-k-psikhologu/page": "app/zapis-k-psikhologu/page.js",
+  "/admin/page": "app/admin/page.js",
   "/api/otzyvy/route": "app/api/otzyvy/route.js",
-  "/stoimost-psihologa/page": "app/stoimost-psihologa/page.js"
+  "/api/user/login/route": "app/api/user/login/route.js"
 }

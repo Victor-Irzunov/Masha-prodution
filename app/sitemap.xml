@@ -1,0 +1,160 @@
+Конечно, вот полный файл sitemap с добавленными датой последнего изменения, частотой изменений и приоритетом для каждого URL:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://irzunova.by/</loc>
+    <lastmod>2023-09-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://irzunova.by/uslugi</loc>
+    <lastmod>2023-09-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://irzunova.by/uslugi/individualnaya-konsultatsiya</loc>
+    <lastmod>2023-09-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://irzunova.by/uslugi/konsultatsiya-perinatalnogo-psikhologa</loc>
+    <lastmod>2023-09-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://irzunova.by/uslugi/semeinii-psikholog</loc>
+    <lastmod>2023-09-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://irzunova.by/uslugi/psikholog-dlya-podrostka</loc>
+    <lastmod>2023-09-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://irzunova.by/uslugi/zhenskii-psikholog</loc>
+    <lastmod>2023-09-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://irzunova.by/uslugi/lechenie-depressii</loc>
+    <lastmod>2023-09-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://irzunova.by/uslugi/klinicheskij-psikholog</loc>
+    <lastmod>2023-09-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://irzunova.by/stoimost-psihologa</loc>
+    <lastmod>2023-09-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://irzunova.by/zapis-k-psikhologu</loc>
+    <lastmod>2023-09-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://irzunova.by/blog</loc>
+    <lastmod>2023-09-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://irzunova.by/blog/Poslerodovaya-depressiya/1</loc>
+    <lastmod>2023-09-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://irzunova.by/blog/Psikhologiya-boli-pri-sekse/2</loc>
+    <lastmod>2023-09-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://irzunova.by/blog/Trudogolik/3</loc>
+    <lastmod>2023-09-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://irzunova.by/blog/Son/4</loc>
+    <lastmod>2023-09-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://irzunova.by/smi</loc>
+    <lastmod>2023-09-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://irzunova.by/psiholog-mariya-irzunova</loc>
+    <lastmod>2023-09-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://irzunova.by/otzivi</loc>
+    <lastmod>2023-09-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://irzunova.by/kontakti</loc>
+    <lastmod>2023-09-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://irzunova.by/uslugi/besplodie</loc>
+    <lastmod>2023-09-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://irzunova.by/uslugi/semeinii-psikholog</loc>
+    <lastmod>2023-09-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

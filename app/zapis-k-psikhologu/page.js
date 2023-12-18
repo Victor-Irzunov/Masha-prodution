@@ -41,13 +41,19 @@ const ZapisNaPriyomPage = observer(() => {
 			target: () => ref3.current,
 		},
 	]
-	const availableTimeslots = [0, 1, 2, 3, 4, 5, 6, 7].map((id) => {
+
+	const availableTimeslots = [...Array(365)].map((_, id) => {
+		const currentDate = new Date();
+		const currentDatePlusDays = new Date(currentDate.setDate(currentDate.getDate() + id));
 		return {
-			id,
-			startTime: new Date(new Date(new Date().setDate(new Date().getDate() + id)).setHours(14, 0, 0, 0)),
-			endTime: new Date(new Date(new Date().setDate(new Date().getDate() + id)).setHours(22, 0, 0, 0)),
-		}
-	})
+		  id,
+		  startTime: new Date(currentDatePlusDays.setHours(14, 0, 0, 0)),
+		  endTime: new Date(currentDatePlusDays.setHours(22, 0, 0, 0)),
+		};
+	 });
+
+
+
 	useEffect(() => { }, [dataApp.dataZapisi])
 
 	const clickScroll = (params) => {
