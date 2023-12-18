@@ -36,7 +36,7 @@ const ObratiliVnimanieBlock = () => {
 		<motion.section
 			initial="hidden"
 			whileInView="visible"
-			className='px-10 pt-10 bg-white'
+			className='px-10 pt-10 bg-white pb-10'
 		>
 			<div className='flex justify-between xy:flex-col sd:flex-row'>
 				<div className='sd:w-1/5 xy:w-full pt-6 mb-5'>
