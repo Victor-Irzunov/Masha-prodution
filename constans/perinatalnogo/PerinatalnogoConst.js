@@ -11,8 +11,8 @@ import img7 from '../../public/images/podrostok/podrostok7.webp'
 export const h1 = 'Консультация перинатального психолога в Минске'
 export const h2 = 'Консультация психолога минск'
 
-export const price = '100,00'
-export const time = '1 час'
+export const price = '95,00'
+export const time = '60 мин'
 
 export const myWork = [
 	{
@@ -102,8 +102,8 @@ export const article = [
 export const articles = [
 	{
 		id: 'article1',
-		price: '100,00',
-		time: '1 час',
+		price: '95,00',
+		time: '60 мин',
 		title: 'Подготовка к беременности, родам и материнству',
 		content: (<div className="font-light leading-5 text-[#191c1d]">
 			<Image alt='Подготовка к беременности' src={img2} style={{ float: 'right', width: '35%', borderRadius: "10px", margin: '1em' }} />
@@ -129,8 +129,8 @@ export const articles = [
 	},
 	{
 		id: 'article2',
-		price: '100,00',
-		time: '1 час',
+		price: '95,00',
+		time: '60 мин',
 		title: 'Преодоление страхов и тревоги во время беременности и после родов',
 		content: (<div className="font-light leading-5 text-[#191c1d]">
 			<Image alt='Преодоление страхов во время беременности' src={img3} style={{ float: 'right' }} />
@@ -158,8 +158,8 @@ export const articles = [
 	},
 	{
 		id: 'article3',
-		price: '100,00',
-		time: '1 час',
+		price: '95,00',
+		time: '60 мин',
 		title: 'Послеродовое психологическое состояние',
 		content: (<div className="font-light leading-5 text-[#191c1d]">
 			<Image alt='Послеродовое психологическое состояние' src={img5} style={{ float: 'right', width: '35%' }} />
@@ -179,8 +179,8 @@ export const articles = [
 	},
 	{
 		id: 'article4',
-		price: '100,00',
-		time: '1 час',
+		price: '95,00',
+		time: '60 мин',
 		title: 'Привязанность матери и ребенка',
 		content: (<div className="font-light leading-5 text-[#191c1d]">
 			<Image alt='Привязанность матери и ребенка' src={img4} style={{ float: 'right', width: '50%', borderRadius: "10px", margin: '1em' }} />
@@ -205,8 +205,8 @@ export const articles = [
 	},
 	{
 		id: 'article5',
-		price: '100,00',
-		time: '1 час',
+		price: '95,00',
+		time: '60 мин',
 		title: 'Психологическое сопровождение при проблемах зачатия, вынашивания, родов',
 		content: (<div className="font-light leading-5 text-[#191c1d]">
 			<Image alt='Психологическое сопровождение' src={img6} style={{ float: 'right', width: '50%' }} />
@@ -237,8 +237,8 @@ export const articles = [
 	},
 	{
 		id: 'article6',
-		price: '100,00',
-		time: '1 час',
+		price: '95,00',
+		time: '60 мин',
 		title: 'Отношения в семье после рождения ребенка',
 		content: (<div className="font-light leading-5 text-[#191c1d]">
 			<Image alt='Отношения в семье после рождения ребенка' src={img6} style={{ float: 'right', width: '50%' }} />

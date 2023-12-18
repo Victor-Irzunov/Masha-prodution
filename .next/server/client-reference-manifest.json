@@ -40,158 +40,6 @@
         "async": false
       }
     },
-    "(app-client)/./node_modules/antd/lib/button/index.js": {
-      "*": {
-        "id": "(sc_client)/./node_modules/antd/lib/button/index.js",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./node_modules/antd/lib/divider/index.js": {
-      "*": {
-        "id": "(sc_client)/./node_modules/antd/lib/divider/index.js",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./node_modules/@ant-design/icons/lib/components/AntdIcon.js": {
-      "*": {
-        "id": "(sc_client)/./node_modules/@ant-design/icons/lib/components/AntdIcon.js",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./node_modules/next/dist/client/link.js": {
-      "*": {
-        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./node_modules/next/dist/client/image-component.js": {
-      "*": {
-        "id": "(sc_client)/./node_modules/next/dist/client/image-component.js",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js": {
-      "*": {
-        "id": "(sc_client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./node_modules/antd/lib/carousel/index.js": {
-      "*": {
-        "id": "(sc_client)/./node_modules/antd/lib/carousel/index.js",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./components/onlineMainPage/OnlineMainPageSection.js": {
-      "*": {
-        "id": "(sc_client)/./components/onlineMainPage/OnlineMainPageSection.js",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./components/formSectionMainPage/SectionFormMainPage.js": {
-      "*": {
-        "id": "(sc_client)/./components/formSectionMainPage/SectionFormMainPage.js",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./components/contentSection/ContentSection.js": {
-      "*": {
-        "id": "(sc_client)/./components/contentSection/ContentSection.js",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./components/obratiliVnimanieMainPage/ObratiliVnimanieBlock.js": {
-      "*": {
-        "id": "(sc_client)/./components/obratiliVnimanieMainPage/ObratiliVnimanieBlock.js",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./components/sectionMainPage/SectionMainPage.js": {
-      "*": {
-        "id": "(sc_client)/./components/sectionMainPage/SectionMainPage.js",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./components/tnt/TntVideoBlock.js": {
-      "*": {
-        "id": "(sc_client)/./components/tnt/TntVideoBlock.js",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./components/questionsMainPage/QuestionsMainPage.js": {
-      "*": {
-        "id": "(sc_client)/./components/questionsMainPage/QuestionsMainPage.js",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./components/btnMenuNavigateMainPage/BtnMenuNavigate.js": {
-      "*": {
-        "id": "(sc_client)/./components/btnMenuNavigateMainPage/BtnMenuNavigate.js",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./public/images/slider/slider-1.webp": {
-      "*": {
-        "id": "(sc_client)/./public/images/slider/slider-1.webp",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./public/images/slider/slider-2.webp": {
-      "*": {
-        "id": "(sc_client)/./public/images/slider/slider-2.webp",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./public/images/slider/slider-3.webp": {
-      "*": {
-        "id": "(sc_client)/./public/images/slider/slider-3.webp",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./public/images/slider/slider-4.webp": {
-      "*": {
-        "id": "(sc_client)/./public/images/slider/slider-4.webp",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
     "(app-client)/./components/footer/FooterComp.js": {
       "*": {
         "id": "(sc_client)/./components/footer/FooterComp.js",
@@ -216,73 +64,25 @@
         "async": false
       }
     },
-    "(app-client)/./app/admin/page.js": {
+    "(app-client)/./node_modules/next/dist/client/image-component.js": {
       "*": {
-        "id": "(sc_client)/./app/admin/page.js",
+        "id": "(sc_client)/./node_modules/next/dist/client/image-component.js",
         "name": "*",
         "chunks": [],
         "async": false
       }
     },
-    "(app-client)/./app/zapis-k-psikhologu/page.js": {
+    "(app-client)/./public/images/about/1.webp": {
       "*": {
-        "id": "(sc_client)/./app/zapis-k-psikhologu/page.js",
+        "id": "(sc_client)/./public/images/about/1.webp",
         "name": "*",
         "chunks": [],
         "async": false
       }
     },
-    "(app-client)/./public/images/smi/xxh.webp": {
+    "(app-client)/./node_modules/antd/lib/divider/index.js": {
       "*": {
-        "id": "(sc_client)/./public/images/smi/xxh.webp",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./public/images/smi/talon.webp": {
-      "*": {
-        "id": "(sc_client)/./public/images/smi/talon.webp",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./public/images/smi/doctorPiter.webp": {
-      "*": {
-        "id": "(sc_client)/./public/images/smi/doctorPiter.webp",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./public/images/smi/theGirl.webp": {
-      "*": {
-        "id": "(sc_client)/./public/images/smi/theGirl.webp",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./public/images/smi/eva.webp": {
-      "*": {
-        "id": "(sc_client)/./public/images/smi/eva.webp",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./public/images/smi/lenta.webp": {
-      "*": {
-        "id": "(sc_client)/./public/images/smi/lenta.webp",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./app/kontakti/page.js": {
-      "*": {
-        "id": "(sc_client)/./app/kontakti/page.js",
+        "id": "(sc_client)/./node_modules/antd/lib/divider/index.js",
         "name": "*",
         "chunks": [],
         "async": false
@@ -291,6 +91,14 @@
     "(app-client)/./node_modules/antd/lib/tooltip/index.js": {
       "*": {
         "id": "(sc_client)/./node_modules/antd/lib/tooltip/index.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/link.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "*",
         "chunks": [],
         "async": false
@@ -344,25 +152,17 @@
         "async": false
       }
     },
-    "(app-client)/./public/images/Info.svg": {
-      "*": {
-        "id": "(sc_client)/./public/images/Info.svg",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./public/images/about/1.webp": {
-      "*": {
-        "id": "(sc_client)/./public/images/about/1.webp",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
     "(app-client)/./node_modules/antd/lib/empty/index.js": {
       "*": {
         "id": "(sc_client)/./node_modules/antd/lib/empty/index.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/@ant-design/icons/lib/components/AntdIcon.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/@ant-design/icons/lib/components/AntdIcon.js",
         "name": "*",
         "chunks": [],
         "async": false
@@ -519,6 +319,14 @@
         "chunks": [],
         "async": false
       }
+    },
+    "(app-client)/./app/blog/[link]/[id]/page.js": {
+      "*": {
+        "id": "(sc_client)/./app/blog/[link]/[id]/page.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
     }
   },
   "edgeSSRModuleMapping": {},
@@ -603,182 +411,6 @@
       ],
       "async": false
     },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/node_modules/antd/lib/button/index.js": {
-      "id": "(app-client)/./node_modules/antd/lib/button/index.js",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/node_modules/antd/lib/divider/index.js": {
-      "id": "(app-client)/./node_modules/antd/lib/divider/index.js",
-      "name": "*",
-      "chunks": [
-        "app/uslugi/[link]/page:static/chunks/app/uslugi/[link]/page.js"
-      ],
-      "async": false
-    },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/node_modules/@ant-design/icons/lib/components/AntdIcon.js": {
-      "id": "(app-client)/./node_modules/@ant-design/icons/lib/components/AntdIcon.js",
-      "name": "*",
-      "chunks": [
-        "app/uslugi/[link]/page:static/chunks/app/uslugi/[link]/page.js"
-      ],
-      "async": false
-    },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/node_modules/next/dist/client/link.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "*",
-      "chunks": [
-        "app/uslugi/[link]/page:static/chunks/app/uslugi/[link]/page.js"
-      ],
-      "async": false
-    },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/node_modules/next/dist/esm/client/link.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "*",
-      "chunks": [
-        "app/uslugi/[link]/page:static/chunks/app/uslugi/[link]/page.js"
-      ],
-      "async": false
-    },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/node_modules/next/dist/client/image-component.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/image-component.js",
-      "name": "*",
-      "chunks": [
-        "app/uslugi/[link]/page:static/chunks/app/uslugi/[link]/page.js"
-      ],
-      "async": false
-    },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/node_modules/next/dist/esm/client/image-component.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/image-component.js",
-      "name": "*",
-      "chunks": [
-        "app/uslugi/[link]/page:static/chunks/app/uslugi/[link]/page.js"
-      ],
-      "async": false
-    },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/node_modules/next/dist/esm/shared/lib/lazy-dynamic/dynamic-no-ssr.js": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/node_modules/antd/lib/carousel/index.js": {
-      "id": "(app-client)/./node_modules/antd/lib/carousel/index.js",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/components/onlineMainPage/OnlineMainPageSection.js": {
-      "id": "(app-client)/./components/onlineMainPage/OnlineMainPageSection.js",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/components/formSectionMainPage/SectionFormMainPage.js": {
-      "id": "(app-client)/./components/formSectionMainPage/SectionFormMainPage.js",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/components/contentSection/ContentSection.js": {
-      "id": "(app-client)/./components/contentSection/ContentSection.js",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/components/obratiliVnimanieMainPage/ObratiliVnimanieBlock.js": {
-      "id": "(app-client)/./components/obratiliVnimanieMainPage/ObratiliVnimanieBlock.js",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/components/sectionMainPage/SectionMainPage.js": {
-      "id": "(app-client)/./components/sectionMainPage/SectionMainPage.js",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/components/tnt/TntVideoBlock.js": {
-      "id": "(app-client)/./components/tnt/TntVideoBlock.js",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/components/questionsMainPage/QuestionsMainPage.js": {
-      "id": "(app-client)/./components/questionsMainPage/QuestionsMainPage.js",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/components/btnMenuNavigateMainPage/BtnMenuNavigate.js": {
-      "id": "(app-client)/./components/btnMenuNavigateMainPage/BtnMenuNavigate.js",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/public/images/slider/slider-1.webp": {
-      "id": "(app-client)/./public/images/slider/slider-1.webp",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/public/images/slider/slider-2.webp": {
-      "id": "(app-client)/./public/images/slider/slider-2.webp",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/public/images/slider/slider-3.webp": {
-      "id": "(app-client)/./public/images/slider/slider-3.webp",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/public/images/slider/slider-4.webp": {
-      "id": "(app-client)/./public/images/slider/slider-4.webp",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
     "/Users/viktor/Programing/WORK/Masha_Next_production/components/footer/FooterComp.js": {
       "id": "(app-client)/./components/footer/FooterComp.js",
       "name": "*",
@@ -811,75 +443,35 @@
       ],
       "async": false
     },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/app/admin/page.js": {
-      "id": "(app-client)/./app/admin/page.js",
+    "/Users/viktor/Programing/WORK/Masha_Next_production/node_modules/next/dist/client/image-component.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/image-component.js",
       "name": "*",
       "chunks": [
-        "app/admin/page:static/chunks/app/admin/page.js"
+        "app/blog/page:static/chunks/app/blog/page.js"
       ],
       "async": false
     },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/app/zapis-k-psikhologu/page.js": {
-      "id": "(app-client)/./app/zapis-k-psikhologu/page.js",
+    "/Users/viktor/Programing/WORK/Masha_Next_production/node_modules/next/dist/esm/client/image-component.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/image-component.js",
       "name": "*",
       "chunks": [
-        "app/zapis-k-psikhologu/page:static/chunks/app/zapis-k-psikhologu/page.js"
+        "app/blog/page:static/chunks/app/blog/page.js"
       ],
       "async": false
     },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/public/images/smi/xxh.webp": {
-      "id": "(app-client)/./public/images/smi/xxh.webp",
+    "/Users/viktor/Programing/WORK/Masha_Next_production/public/images/about/1.webp": {
+      "id": "(app-client)/./public/images/about/1.webp",
       "name": "*",
       "chunks": [
-        "app/smi/page:static/chunks/app/smi/page.js"
+        "app/psiholog-mariya-irzunova/page:static/chunks/app/psiholog-mariya-irzunova/page.js"
       ],
       "async": false
     },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/public/images/smi/talon.webp": {
-      "id": "(app-client)/./public/images/smi/talon.webp",
+    "/Users/viktor/Programing/WORK/Masha_Next_production/node_modules/antd/lib/divider/index.js": {
+      "id": "(app-client)/./node_modules/antd/lib/divider/index.js",
       "name": "*",
       "chunks": [
-        "app/smi/page:static/chunks/app/smi/page.js"
-      ],
-      "async": false
-    },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/public/images/smi/doctorPiter.webp": {
-      "id": "(app-client)/./public/images/smi/doctorPiter.webp",
-      "name": "*",
-      "chunks": [
-        "app/smi/page:static/chunks/app/smi/page.js"
-      ],
-      "async": false
-    },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/public/images/smi/theGirl.webp": {
-      "id": "(app-client)/./public/images/smi/theGirl.webp",
-      "name": "*",
-      "chunks": [
-        "app/smi/page:static/chunks/app/smi/page.js"
-      ],
-      "async": false
-    },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/public/images/smi/eva.webp": {
-      "id": "(app-client)/./public/images/smi/eva.webp",
-      "name": "*",
-      "chunks": [
-        "app/smi/page:static/chunks/app/smi/page.js"
-      ],
-      "async": false
-    },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/public/images/smi/lenta.webp": {
-      "id": "(app-client)/./public/images/smi/lenta.webp",
-      "name": "*",
-      "chunks": [
-        "app/smi/page:static/chunks/app/smi/page.js"
-      ],
-      "async": false
-    },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/app/kontakti/page.js": {
-      "id": "(app-client)/./app/kontakti/page.js",
-      "name": "*",
-      "chunks": [
-        "app/kontakti/page:static/chunks/app/kontakti/page.js"
+        "app/uslugi/[link]/page:static/chunks/app/uslugi/[link]/page.js"
       ],
       "async": false
     },
@@ -888,6 +480,22 @@
       "name": "*",
       "chunks": [
         "app/uslugi/page:static/chunks/app/uslugi/page.js"
+      ],
+      "async": false
+    },
+    "/Users/viktor/Programing/WORK/Masha_Next_production/node_modules/next/dist/client/link.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/blog/page:static/chunks/app/blog/page.js"
+      ],
+      "async": false
+    },
+    "/Users/viktor/Programing/WORK/Masha_Next_production/node_modules/next/dist/esm/client/link.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/blog/page:static/chunks/app/blog/page.js"
       ],
       "async": false
     },
@@ -939,27 +547,19 @@
       ],
       "async": false
     },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/public/images/Info.svg": {
-      "id": "(app-client)/./public/images/Info.svg",
-      "name": "*",
-      "chunks": [
-        "app/stoimost-psihologa/page:static/chunks/app/stoimost-psihologa/page.js"
-      ],
-      "async": false
-    },
-    "/Users/viktor/Programing/WORK/Masha_Next_production/public/images/about/1.webp": {
-      "id": "(app-client)/./public/images/about/1.webp",
-      "name": "*",
-      "chunks": [
-        "app/psiholog-mariya-irzunova/page:static/chunks/app/psiholog-mariya-irzunova/page.js"
-      ],
-      "async": false
-    },
     "/Users/viktor/Programing/WORK/Masha_Next_production/node_modules/antd/lib/empty/index.js": {
       "id": "(app-client)/./node_modules/antd/lib/empty/index.js",
       "name": "*",
       "chunks": [
-        "app/uslugi/[link]/page:static/chunks/app/uslugi/[link]/page.js"
+        "app/blog/page:static/chunks/app/blog/page.js"
+      ],
+      "async": false
+    },
+    "/Users/viktor/Programing/WORK/Masha_Next_production/node_modules/@ant-design/icons/lib/components/AntdIcon.js": {
+      "id": "(app-client)/./node_modules/@ant-design/icons/lib/components/AntdIcon.js",
+      "name": "*",
+      "chunks": [
+        "app/blog/page:static/chunks/app/blog/page.js"
       ],
       "async": false
     },
@@ -1114,27 +714,26 @@
         "app/uslugi/[link]/page:static/chunks/app/uslugi/[link]/page.js"
       ],
       "async": false
+    },
+    "/Users/viktor/Programing/WORK/Masha_Next_production/app/blog/[link]/[id]/page.js": {
+      "id": "(app-client)/./app/blog/[link]/[id]/page.js",
+      "name": "*",
+      "chunks": [
+        "app/blog/[link]/[id]/page:static/chunks/app/blog/[link]/[id]/page.js"
+      ],
+      "async": false
     }
   },
   "entryCSSFiles": {
-    "/Users/viktor/Programing/WORK/Masha_Next_production/app/page": [
-      "static/css/app/page.css"
-    ],
     "/Users/viktor/Programing/WORK/Masha_Next_production/app/layout": [
       "static/css/app/layout.css"
     ],
-    "/Users/viktor/Programing/WORK/Masha_Next_production/app/admin/layout": [],
-    "/Users/viktor/Programing/WORK/Masha_Next_production/app/admin/page": [
-      "static/css/app/admin/page.css"
-    ],
-    "/Users/viktor/Programing/WORK/Masha_Next_production/app/zapis-k-psikhologu/page": [],
-    "/Users/viktor/Programing/WORK/Masha_Next_production/app/zapis-k-psikhologu/layout": [],
-    "/Users/viktor/Programing/WORK/Masha_Next_production/app/smi/page": [],
-    "/Users/viktor/Programing/WORK/Masha_Next_production/app/kontakti/page": [],
-    "/Users/viktor/Programing/WORK/Masha_Next_production/app/kontakti/layout": [],
-    "/Users/viktor/Programing/WORK/Masha_Next_production/app/uslugi/page": [],
-    "/Users/viktor/Programing/WORK/Masha_Next_production/app/stoimost-psihologa/page": [],
     "/Users/viktor/Programing/WORK/Masha_Next_production/app/psiholog-mariya-irzunova/page": [],
-    "/Users/viktor/Programing/WORK/Masha_Next_production/app/uslugi/[link]/page": []
+    "/Users/viktor/Programing/WORK/Masha_Next_production/app/uslugi/page": [],
+    "/Users/viktor/Programing/WORK/Masha_Next_production/app/uslugi/[link]/page": [],
+    "/Users/viktor/Programing/WORK/Masha_Next_production/app/blog/layout": [],
+    "/Users/viktor/Programing/WORK/Masha_Next_production/app/blog/page": [],
+    "/Users/viktor/Programing/WORK/Masha_Next_production/app/blog/[link]/[id]/layout": [],
+    "/Users/viktor/Programing/WORK/Masha_Next_production/app/blog/[link]/[id]/page": []
   }
 }

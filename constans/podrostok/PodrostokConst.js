@@ -2,17 +2,17 @@ import Image from 'next/image'
 import img1 from '../../public/images/podrostok/podrostok.webp'
 import img2 from '../../public/images/podrostok/podrostok2.webp'
 import img3 from '../../public/images/podrostok/podrostok3.webp'
-import img5 from '../../public/images/podrostok/podrostok4.webp'
-import img4 from '../../public/images/podrostok/podrostok5.webp'
-import img6 from '../../public/images/podrostok/podrostok6.webp'
+// import img5 from '../../public/images/podrostok/podrostok4.webp'
+// import img4 from '../../public/images/podrostok/podrostok5.webp'
+// import img6 from '../../public/images/podrostok/podrostok6.webp'
 import img7 from '../../public/images/podrostok/podrostok7.webp'
 
 
 export const h1 = 'Подростковый психолог в Минске'
 export const h2 = 'Консультация подросткового психолога'
 
-export const price = '100,00'
-export const time = '1 час'
+export const price = '85,00'
+export const time = '60 мин'
 
 export const i = 'Многие подростки начинают сомневаться в том, чему их учили родители, что приводит к проблемам в отношениях между родителями и детьми, поскольку у подростка развивается чувство автономии.'
 
@@ -136,8 +136,8 @@ export const article = [
 export const articles = [
 	{
 		id: 'article1',
-		price: '100,00',
-		time: '1 час',
+		price: '85,00',
+		time: '60 мин',
 		title: 'Резкие изменения в характере или перемены настроения у подростка',
 		content: (<div className="font-light leading-5 text-[#191c1d]">
 			<Image
@@ -180,8 +180,8 @@ export const articles = [
 	},
 	{
 		id: 'article2',
-		price: '100,00',
-		time: '1 час',
+		price: '85,00',
+		time: '60 мин',
 		title: 'Ухудшение успеваемости у подростка',
 		content: (<div className="font-light leading-5 text-[#191c1d]">
 			<Image
@@ -263,8 +263,8 @@ export const articles = [
 	},
 	{
 		id: 'article3',
-		price: '100,00',
-		time: '1 час',
+		price: '85,00',
+		time: '60 мин',
 		title: 'Потеря интереса к общению',
 		content: (<div className="font-light leading-5 text-[#191c1d]">
 			<Image
@@ -342,8 +342,8 @@ export const articles = [
 	},
 	{
 		id: 'article4',
-		price: '100,00',
-		time: '1 час',
+		price: '85,00',
+		time: '60 мин',
 		title: 'Комплексы и страхи у подростка',
 		content: (<div className="font-light leading-5 text-[#191c1d]">
 			<Image
@@ -432,8 +432,8 @@ export const articles = [
 	},
 	{
 		id: 'article5',
-		price: '100,00',
-		time: '1 час',
+		price: '85,00',
+		time: '60 мин',
 		title: 'В подростковом возрасте замкнутость и подозрительность могут стать защитной реакцией на какие-то проблемы.',
 		content: (<div className="font-light leading-5 text-[#191c1d]">
 			<Image
@@ -512,8 +512,8 @@ export const articles = [
 	},
 	{
 		id: 'article6',
-		price: '100,00',
-		time: '1 час',
+		price: '85,00',
+		time: '60 мин',
 		title: 'Вспыльчивость, потеря контакта со взрослыми',
 		content: (<div className="font-light leading-5 text-[#191c1d]">
 			<Image
@@ -595,8 +595,8 @@ export const articles = [
 	},
 	{
 		id: 'article7',
-		price: '100,00',
-		time: '1 час',
+		price: '85,00',
+		time: '60 мин',
 		title: 'Зависимость от гаджетов и социальных сетей',
 		content: (<div className="font-light leading-5 text-[#191c1d]">
 			<Image
@@ -677,8 +677,8 @@ export const articles = [
 	},
 	{
 		id: 'article8',
-		price: '100,00',
-		time: '1 час',
+		price: '85,00',
+		time: '60 мин',
 		title: 'Зависимость алкогольную, наркотическую, сексуальную, азартную, игровую',
 		content: (<div className="font-light leading-5 text-[#191c1d]">
 			<Image
@@ -755,8 +755,8 @@ export const articles = [
 	},
 	{
 		id: 'article9',
-		price: '100,00',
-		time: '1 час',
+		price: '85,00',
+		time: '60 мин',
 		title: 'Психические расстройства, включая депрессию, тревогу , фобии, обсессивно-компульсивное расстройство (ОКР), посттравматическое стрессовое расстройство (ПТСР), биполярное расстройство и шизофрению.',
 		content: (<div className="font-light leading-5 text-[#191c1d]">
 			<Image
@@ -835,8 +835,8 @@ export const articles = [
 	},
 	{
 		id: 'article10',
-		price: '100,00',
-		time: '1 час',
+		price: '85,00',
+		time: '60 мин',
 		title: 'Нарушения сна, включая бессонницу , ночные кошмары и лунатизм.',
 		content: (<div className="font-light leading-5 text-[#191c1d]">
 			<Image
@@ -926,8 +926,8 @@ export const articles = [
 	},
 	{
 		id: 'article11',
-		price: '100,00',
-		time: '1 час',
+		price: '85,00',
+		time: '60 мин',
 		title: 'Проблемы с идентичностью и самооценкой, включая расстройства образа тела и проблемы гендерной идентичности.',
 		content: (<div className="font-light leading-5 text-[#191c1d]">
 			<Image

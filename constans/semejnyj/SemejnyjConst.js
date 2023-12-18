@@ -11,8 +11,8 @@ import Image from 'next/image'
 export const h1 = 'Семейный психолог в Минске'
 export const h2 = 'Консультация психолога по семейным отношениям'
 
-export const price = '100,00'
-export const time = '1 час'
+export const price = '120,00'
+export const time = '90 мин'
 
 export const myWork = [
 	{
@@ -99,8 +99,8 @@ export const article = [
 export const articles = [
 	{
 		id: 'article1',
-		price: '100,00',
-		time: '1 час',
+		price: '120,00',
+		time: '90 мин',
 		title: 'Трудности в общении и отношения зашли в тупик',
 		content: (<div className="font-light leading-5 text-[#191c1d]">
 			<Image
@@ -124,8 +124,8 @@ export const articles = [
 	},
 	{
 		id: 'article2',
-		price: '100,00',
-		time: '1 час',
+		price: '120,00',
+		time: '90 мин',
 		title: 'Разные взгляды на воспитание детей и невозможность договориться',
 		content: (<div className="font-light leading-5 text-[#191c1d]">
 			<Image
@@ -151,8 +151,8 @@ export const articles = [
 	},
 	{
 		id: 'article3',
-		price: '100,00',
-		time: '1 час',
+		price: '120,00',
+		time: '90 мин',
 		title: 'Неверность, измены, ревность, переходящая границы ревность',
 		content: (<div className="font-light leading-5 text-[#191c1d]">
 			<Image
@@ -182,8 +182,8 @@ export const articles = [
 	},
 	{
 		id: 'article4',
-		price: '100,00',
-		time: '1 час',
+		price: '120,00',
+		time: '90 мин',
 		title: 'Подготовка к родительству',
 		content: (<div className="font-light leading-5 text-[#191c1d]">
 			<Image
@@ -213,8 +213,8 @@ export const articles = [
 	},
 	{
 		id: 'article5',
-		price: '100,00',
-		time: '1 час',
+		price: '120,00',
+		time: '90 мин',
 		title: 'Затянувшиеся или повторяющиеся конфликты',
 		content: (<div className="font-light leading-5 text-[#191c1d]">
 			<Image
@@ -239,8 +239,8 @@ export const articles = [
 	},
 	{
 		id: 'article6',
-		price: '100,00',
-		time: '1 час',
+		price: '120,00',
+		time: '90 мин',
 		title: 'Конфликты с родственниками',
 		content: (<div className="font-light leading-5 text-[#191c1d]">
 			<Image
@@ -268,8 +268,8 @@ export const articles = [
 	},
 	{
 		id: 'article7',
-		price: '100,00',
-		time: '1 час',
+		price: '120,00',
+		time: '90 мин',
 		title: 'Поддержка при разводе или расставании',
 		content: (<div className="font-light leading-5 text-[#191c1d]">
 			<Image
@@ -297,8 +297,8 @@ export const articles = [
 	},
 	{
 		id: 'article8',
-		price: '100,00',
-		time: '1 час',
+		price: '120,00',
+		time: '90 мин',
 		title: 'Много обиды, гнева, тревоги',
 		content: (<div className="font-light leading-5 text-[#191c1d]">
 			<Image
@@ -328,8 +328,8 @@ export const articles = [
 	},
 	{
 		id: 'article9',
-		price: '100,00',
-		time: '1 час',
+		price: '120,00',
+		time: '90 мин',
 		title: 'Попытки строгого контроля одного супруга - другим',
 		content: (<div className="font-light leading-5 text-[#191c1d]">
 			<Image
@@ -357,8 +357,8 @@ export const articles = [
 	},
 	{
 		id: 'article10',
-		price: '100,00',
-		time: '1 час',
+		price: '120,00',
+		time: '90 мин',
 		title: 'Насилие - физическое или психологическое',
 		content: (<div className="font-light leading-5 text-[#191c1d]">
 			<Image
@@ -386,8 +386,8 @@ export const articles = [
 	},
 	{
 		id: 'article11',
-		price: '100,00',
-		time: '1 час',
+		price: '120,00',
+		time: '90 мин',
 		title: 'Любовные «треугольники» и всяческие «многоугольники»',
 		content: (<div className="font-light leading-5 text-[#191c1d]">
 			<Image
@@ -415,8 +415,8 @@ export const articles = [
 	},
 	{
 		id: 'article12',
-		price: '100,00',
-		time: '1 час',
+		price: '120,00',
+		time: '90 мин',
 		title: 'Чувство неважности и ненужности для партнера',
 		content: (<div className="font-light leading-5 text-[#191c1d]">
 			<Image
