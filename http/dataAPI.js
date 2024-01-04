@@ -18,9 +18,19 @@ export const editDataZapisi = async (obj) => {
 	return data
 }
 export const deleteOneZapisi = async (id) => {
-	const { data } = await $authHost.delete('api/zapisi/' + id)
-	return data
-}
+	try {
+		const { data } = await $authHost.delete(`api/zapisi/delete`, {
+			params: {
+				id
+			}
+		});
+		return data;
+	} catch (error) {
+		console.error("Ошибка при удалении записи:", error);
+		throw error;
+	}
+};
+
 export const getAllZapisi = async () => {
 
 	const { data } = await $host.get('/api/zapisi');

@@ -11,6 +11,7 @@ export async function GET(req, res) {
 				isNew: true,
 			},
 		});
+		console.log("🚀 🚀 🚀  _ file: route.js:14 _ GET _ data:", data)
 		return NextResponse.json(data);
 	} catch (error) {
 		return new NextResponse("Серверная ошибка Отзывы Get", { status: 500 });

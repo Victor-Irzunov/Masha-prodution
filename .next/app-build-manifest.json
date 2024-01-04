@@ -6,40 +6,26 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/psiholog-mariya-irzunova/page": [
+    "/otzivi/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/psiholog-mariya-irzunova/page.js"
+      "static/chunks/app/otzivi/page.js"
     ],
-    "/uslugi/page": [
+    "/otzivi/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/uslugi/page.js"
+      "static/chunks/app/otzivi/layout.js"
     ],
-    "/uslugi/[link]/page": [
+    "/admin/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/uslugi/[link]/page.js"
+      "static/css/app/admin/page.css",
+      "static/chunks/app/admin/page.js"
     ],
-    "/blog/layout": [
+    "/admin/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/blog/layout.js"
-    ],
-    "/blog/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/blog/page.js"
-    ],
-    "/blog/[link]/[id]/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/blog/[link]/[id]/layout.js"
-    ],
-    "/blog/[link]/[id]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/blog/[link]/[id]/page.js"
+      "static/chunks/app/admin/layout.js"
     ]
   }
 }

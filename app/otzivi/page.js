@@ -9,7 +9,7 @@ export const revalidate = 60;
 const prisma = new PrismaClient();
 
 async function getData() {
-	console.log('---------запрос----' )
+	console.log('---------запрос----')
 	try {
 		// const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/otzyvy/all`)
 
@@ -18,7 +18,7 @@ async function getData() {
 		// }
 		const data = await prisma.otzyvy.findMany();
 		if (!data || data.length === 0) {
-			throw new Error(`Проблема с получением отзывов`);
+			console.log('Нет отзывов' )
 		}
 		return data
 	} catch (error) {
@@ -78,7 +78,8 @@ export default async function OtzyvyPage() {
 												{fu(el.vozvrast, arr1)}
 											</p>
 										</div>
-										<p className='text-[10px] text-gray-400'>{moment(el.createdAt).startOf('hour').fromNow()}</p>
+										<p className='text-[10px] text-gray-400'>{moment(el.createdAt).format('DD.MM.YYYY HH:mm')}</p>
+
 										<Rate
 											allowHalf
 											character={<HeartOutlined />}

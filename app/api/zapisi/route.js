@@ -4,7 +4,6 @@ import { NextResponse } from 'next/server';
 const prisma = new PrismaClient();
 
 export async function GET(req, res) {
-  // console.log('----Запрос на сервере за записями-----' )
   try {
     const data = await prisma.zapisi.findMany();
     if (data.length) {
@@ -21,7 +20,7 @@ export async function POST(req, res) {
   try {
 
     const body = await req.json()
-    const { start, end, title, tel, type, zapros} = body;
+    const { start, end, title, tel, type, zapros } = body;
     const allDay = Boolean(body.allDay);
     const result = await prisma.zapisi.create({
       data: {
@@ -35,7 +34,7 @@ export async function POST(req, res) {
       },
     });
     // console.log("🚀 🚀 🚀 zapisi: POST data:", result);
-    return  NextResponse.json(result);
+    return NextResponse.json(result);
 
   } catch (error) {
     console.log("🚀 🚀zapisi: POST error:", error);
@@ -44,19 +43,25 @@ export async function POST(req, res) {
 }
 
 export async function DELETE(req, res) {
+  console.log('---------DELETE---------------' )
   try {
     const { id } = req.params;
+    console.log("🚀 🚀 🚀  _ file: route.js:49 _ DELETE _ id:", id)
+    console.log('-----typeof id: ', typeof id)
+
+    
     await prisma.zapisi.delete({
-      where: { id: parseInt(id) }, // Парсим id в число, так как он ожидается в числовом формате
-    });
+      where: { id: parseInt(id) },
+    })
     return NextResponse.json({ message: `Запись удалена` });
   } catch (error) {
     console.log("🚀 🚀zapisi: DELETE error:", error);
-    return new NextResponse("Ошибка на сервере", { status: 500 });
+    return new NextResponse("Ошибка на сервере DELETE", { status: 500 });
   }
 }
 
 export async function PUT(req, res) {
+  console.log('--------PUT-------' )
   try {
     const body = await req.json();
     const { id, start, end, title, allDay, tel, type, zapros } = body;

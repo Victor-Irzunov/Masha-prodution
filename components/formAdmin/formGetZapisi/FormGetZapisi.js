@@ -9,7 +9,6 @@ const FormGetZapisi = ({ setData }) => {
 		getDataZapisi({ start: values.start.$d })
 			.then(data => {
 				if (data.length) {
-					console.log('data: ', data)
 					setData(data)
 				} else {
 					message.warning('Записей нет')

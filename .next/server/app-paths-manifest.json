@@ -1,9 +1,8 @@
 {
-  "/psiholog-mariya-irzunova/page": "app/psiholog-mariya-irzunova/page.js",
-  "/uslugi/page": "app/uslugi/page.js",
-  "/blog/page": "app/blog/page.js",
-  "/uslugi/[link]/page": "app/uslugi/[link]/page.js",
-  "/api/article/[id]/route": "app/api/article/[id]/route.js",
-  "/api/article/view-article/[id]/route": "app/api/article/view-article/[id]/route.js",
-  "/blog/[link]/[id]/page": "app/blog/[link]/[id]/page.js"
+  "/api/user/route": "app/api/user/route.js",
+  "/api/zapisi/route": "app/api/zapisi/route.js",
+  "/api/otzyvy/route": "app/api/otzyvy/route.js",
+  "/admin/page": "app/admin/page.js",
+  "/otzivi/page": "app/otzivi/page.js",
+  "/api/user/register/route": "app/api/user/register/route.js"
 }

@@ -12,8 +12,6 @@ import { deleteOneZapisi, editDataZapisi } from '../../../http/dataAPI'
 const { RangePicker } = DatePicker
 const { TextArea } = Input
 
-
-
 const FormEditZapisi = observer(() => {
 	const [form] = Form.useForm()
 	const [tel, setTel] = useState('')
@@ -40,33 +38,17 @@ const FormEditZapisi = observer(() => {
 	const onFinish = (values) => {
 		console.log('Success:', values)
 
-		// const formData = new FormData()
-		// formData.append('zapros', values.zapros)
-		// if (values.date) {
-		// 	formData.append('start', values.date[0].$d)
-		// 	formData.append('end', values.date[1].$d)
-		// }
-		// formData.append('tel', values.tel)
-		// formData.append('title', values.title)
-		// formData.append('allDay', values.allDay)
-		// formData.append('type', values.type)
-		// formData.append('id', values.id)
-
 		const formData = {};
-
 		formData.zapros = values.zapros;
-
 		if (values.date) {
 			formData.start = values.date[0].$d;
 			formData.end = values.date[1].$d;
 		}
-
 		formData.tel = values.tel;
 		formData.title = values.title;
 		formData.allDay = values.allDay;
 		formData.type = values.type;
 		formData.id = values.id;
-
 
 		editDataZapisi(formData)
 			.then(data => {
@@ -83,15 +65,16 @@ const FormEditZapisi = observer(() => {
 	}
 
 	const deleteOneZapis = id => {
+		console.log("🚀 🚀 🚀deleteOneZapis _ id:", id);
 		deleteOneZapisi(id)
 			.then(res => {
-				if (res) {
-					dataApp.setResDataZapisi(res)
-					setData(data => data.filter(el => el.id !== id))
-					message.success('Запись удалена')
-				}
-			})
-	}
+			if (res) {
+				dataApp.setResDataZapisi(res);
+				setData(data => data.filter(el => el.id !== id));
+				message.success('Запись удалена');
+			}
+		});
+	};
 
 	return (
 		<>
@@ -184,7 +167,7 @@ const FormEditZapisi = observer(() => {
 							</Form.Item>
 
 
-							
+
 
 
 							<Form.Item
@@ -228,18 +211,15 @@ const FormEditZapisi = observer(() => {
 							<div className='flex justify-between'>
 								<Popconfirm
 									title="Удалить запись"
-									description="Мария Вы точно хотите удалить запись?"
+									description="Мария, вы точно хотите удалить запись?"
 									onConfirm={() => deleteOneZapis(el.id)}
 									okText="Да"
 									cancelText="Нет"
 								>
-									<button
-										className='text-red-600 pb-4'
-										type='text'
-									>
-										<DeleteOutlined className='mr-2' />
-										удалить
-									</button>
+									<Button type="text" className="text-red-600 pb-4">
+										<DeleteOutlined className="mr-2" />
+										Удалить
+									</Button>
 								</Popconfirm>
 
 								<Form.Item
